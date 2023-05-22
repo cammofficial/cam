@@ -128,7 +128,6 @@ else {
         // Compruebas el estado del registro de asistencia
         if (strtotime($horallegada) <= $hora_limite) {
           $estado = 'Asistencia';
-          $color = 'holaquehagoo';
           
         } else if (strtotime($horallegada) <= $hora_limite + 600) { // 600 segundos = 10 minutos
           $estado = 'Retraso';

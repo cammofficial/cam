@@ -22,20 +22,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
 
 
-
+ 
 
 
 
 </head>
 <body class="fondo">
-
+  
 
 
 <div class="centrado1 tabla-responsive " id="tabla" > <h1 class="font1" >Lista de alumnos</h1>
 
 <?php
-include '../partials/_dbconnect.php';
-$result = mysqli_query($conn, 'SELECT * FROM historial_registro R, usuarios U WHERE R.id_registro = U.id ORDER BY R.fecha DESC');
+  include '../partials/_dbconnect.php';
+$result = mysqli_query($conn, 'SELECT * FROM historial_registro R, usuarios U WHERE R.id_registro = U.id  ');
 echo '<table class="table table-bordered">';
 echo '<thead>';
 echo '<tr>';
@@ -44,36 +44,23 @@ echo '<th>Estado</th>';
 echo '<th>Hora Llegada</th>';
 echo '<th>Hora Limite</th>';
 echo '<th>Fecha</th>';
+
 echo '</tr>';
 echo '</thead>';
 echo '<tbody>';
 
 while ($row = mysqli_fetch_assoc($result)) {
-    echo '<tr>';
+  echo '<tr>';
     echo '<td>' . $row['nombre'] . '</td>';
-
-    $estado = $row['estado'];
-    $color = '';
-
-    if ($estado === 'Asistencia') {
-        $color = 'green';
-    } elseif ($estado === 'Retraso') {
-        $color = 'yellow';
-    } elseif ($estado === 'Falta') {
-        $color = 'red';
-    }
-
-    echo '<td style="color: ' . $color . ';">' . $row['estado'] . '</td>';
-    echo '<td>' . $row['horallegada'] . '</td>';
-    echo '<td>' . $row['horalimite'] . '</td>';
-    echo '<td>' . $row['fecha'] . '</td>';
-    echo '</tr>';
+  echo '<td>' . $row['estado'] . '</td>';
+  echo '<td>' . $row['horallegada'] . '</td>';
+  echo '<td>' . $row['horalimite'] . '</td>';
+  echo '<td>' . $row['fecha'] . '</td>';
+  echo '</tr>';
 }
-
 echo '</tbody>';
 echo '</table>';
 ?>
-
 
 
 
