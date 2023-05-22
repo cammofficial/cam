@@ -20,7 +20,7 @@
 </head>
 
 <body class="fondo">
-  <nav class="navbar sticy-top navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar sticy-top navbar-expand-lg navbar-dark bg-dark"> 
     <div class="container-fluid">
       <a class="navbar-brand" href="../asistencia.php">
         <img src="../images/logo.png" id="logo">
