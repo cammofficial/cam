@@ -1,0 +1,19 @@
+.mfk-keyboard.green
+{
+    background-color: #829640;
+}
+.mfk-keyboard.green .mfk-key
+{
+    color: #5D544F;
+    background-color: #fff;
+    border: solid 1px #829640;
+    border-width: 0 2px 2px 0;
+}
+.mfk-keyboard.green .mfk-key:hover
+{
+   background-color: #e0e8c7;
+}
+.mfk-keyboard.green .mfk-key-down
+{
+    border: solid 1px #829640;
+}

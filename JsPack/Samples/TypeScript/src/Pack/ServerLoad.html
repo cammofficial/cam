@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>MindFusion JavaScript Pack Sample - Server Load</title>
+    <style type="text/css">
+        .container {
+            width: 100%;
+            position: relative;
+        }
+
+        .column {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+	<div id="header" style="height: 49px;">
+        <div style="float: left; margin-left: 5px;">
+            <a href="../index.html" style="margin-left: 10px;">Index</a>
+        </div>
+		<div style="float: right; margin-right: 5px;">
+            <a href="../pack_ServerLoad.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton" >
+                &rsaquo;
+            </button>
+		</div>
+	</div>
+	<div id="info" style="top: 60px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample</h1>
+			<p>
+                A sample server load web application.
+                The chart shows number of users on a given connection between two stations in the
+                network at each moment. The graphic includes data for the last 30 seconds. The diagram
+                shows the servers and clients that build the network. By default the charts shows
+                data only for the two most important connections, out of total 10. Users can select
+                different connections and view their graphics. The gauge control provides data for
+                the average count of users at any given moment.
+                <br />
+                Click on a link in the network to show its load. Click and drag with the mouse or
+                hold 'Ctrl' to select several links. Click anywhere else on the diagram to return
+                to default.
+			</p>
+		</div>
+	</div>
+    <div id="content" style="top: 60px; bottom: 24px;">
+        <div class="container" style="height: 30%;">
+            <canvas id="lineChart" style="width: 100%; height: 100%; display: block;"></canvas>
+        </div>
+        <div class="container" style="height: 70%;">
+            <div class="column">
+                <div style="width: 100%; height: 100%; overflow: auto;">
+                    <canvas id="diagram"></canvas>
+                </div>
+            </div>
+            <div class="column" style="right: 0; padding-top: 20px;">
+                <canvas width="320" height="320" id="userCounter"></canvas>
+            </div>
+        </div>
+    </div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+</body>
+</html>

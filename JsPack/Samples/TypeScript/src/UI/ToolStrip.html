@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>MindFusion JS UI Sample - ToolStrip</title>
+	<style type="text/css">
+		/* Set the sizing of the image, diplayed in the Label toolstrip item. */
+		/* Apply the same sizing during drag and drop. */
+		.mfc-toolstrip-item.mfc-toolbutton-label img, 
+		.mfc-drag-item img
+		{
+			width: 30px;
+			height: 30px;
+			margin: auto 6px;
+			border-radius: 50%;
+		}
+		.mfc-toolstrip-item.mfc-toolbutton-default input
+		{
+			vertical-align: middle;
+		}
+		/* Style the popup menu */
+		.mfc-menu.popmenu
+		{
+			position: absolute;
+			box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+		}
+	</style>
+</head>
+<body>
+	<div id="header" style="height: 59px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a> 
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="ToolStrip.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton">
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+	<div id="info" style="top: 70px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample
+			</h1>
+			<p id="pinfo">
+				This sample shows how to use the ToolStrip control, how to create different types of toolstrip items and how to handle various events.
+				Additionally, a Menu control is used as a drop-down menu and a Tooltip control is attached to the search input.
+			</p>
+		</div>
+	</div>
+	<div id="content" style="top: 70px; bottom: 24px;">
+	</div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+</body>
+</html>

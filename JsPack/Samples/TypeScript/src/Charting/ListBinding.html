@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>MindFusion Charting Sample - ListBinding</title>
+
+</head>
+<body>
+    <input type="hidden" id="collapsed" />
+	<div id="header" style="height: 49px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="../charting_ListBinding.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton" >
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+    <div id="info" style="top: 60px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>About this sample
+            </h1>
+			<p id="pinfo">
+				This sample shows how to bind the chart to a list of custom objects by setting the list as DataSource.
+			</p>
+        </div>
+    </div>
+    <div id="content" style="top: 60px; bottom: 24px; overflow-y: scroll;">
+
+        <div id="controls" style="height: 150px;">
+            <div style="display: inline-block">
+                <label for="radarType">RadarType</label>
+                <select id="radarType">
+                    <option value="0">Polygon</option>
+                    <option value="1">Pie</option>
+                </select>
+            </div>
+            <div style="display: inline-block">
+                <label for="gridType">GridType</label>
+                <select id="gridType">
+                    <option value="0">Spiderweb</option>
+                    <option value="1">Radar</option>
+                </select>
+            </div>
+            <input type="checkbox" id="chbShowScatter" />
+            <label for="chbShowScatter">ShowScatter</label>
+			<div style="display: inline-block">
+				Area opacity<input type="range" id="areaOpacity" min="0" max="10" />
+			</div>
+        </div>
+
+        <div style="position: absolute; left: 0px; top: 150px; bottom: 0px; right: 0px">
+			<canvas id="radarChart" style="width: 100%; height: 100%; display: block;"></canvas>
+        </div>
+    </div>
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+</body>
+</html>

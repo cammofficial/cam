@@ -1,0 +1,118 @@
+.mfm-map-view.earth .mfm-bubble{
+  color: #46697d;
+  background-color: #fff;
+  border: solid 1px #c5b28a;
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-map-view.earth .mfm-bubble::before {
+  border-color: #c5b28a transparent transparent transparent;
+}
+.mfm-map-view.earth .mfm-bubble::after {
+  border-color: #fff transparent transparent transparent;
+}
+.mfm-map-view.earth .mfm-bubble.mfm-hidden
+{
+  transition:visibility 0s linear 0.2s,opacity 0.2s linear;
+}
+.mfm-map-view.earth .mfm-bubble:not(.mfm-hidden)
+{
+  transition-delay:0s;
+  transition: opacity 0.2s linear;
+}.mfm-map-view .mfm-zoom-controller.earth
+{
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-zoom-controller.earth
+{
+  border:1px solid #c5b28a;
+  border-radius: 3px;
+}
+.mfm-zoom-controller.earth a
+{
+  color: #fff;
+  background-color: #c5b28a;
+}
+.mfm-zoom-controller.earth a:first-child
+{
+  border-bottom :1px solid #fff;
+}
+.mfm-zoom-controller.earth a:hover
+{
+  background-color: #46697d;
+  color: #c5b28a;
+}
+.mfm-zoom-controller.earth a.mfm-disabled
+{
+  background-color: #efefef;
+  color: #aaa;
+}
+.mfm-map-view .mfm-layer-controller.earth
+{
+  color: #fff;
+  background-color: #c5b28a;
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-layer-controller.earth
+{
+  border:1px solid #46697d;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.mfm-layer-controller.earth > div:not(:last-child)
+{
+  border-bottom :1px solid #fff;
+}
+.mfm-layer-controller.earth > div:hover
+{
+  background-color: #46697d;
+  color: #c5b28a;
+}.mfm-map-view.earth .mfm-hint{
+  background-color: #c5b28a;
+  color: #fff;
+}
+.mfm-map-view.earth .mfm-hint.mfm-hidden
+{
+  transform:scaleY(0);
+  transition: all 0.3s; 
+}
+.mfm-map-view.earth .mfm-hint:not(.mfm-hidden)
+{
+  transform:scaleY(1);
+  transition: all 0.3s; 
+}.mfm-map-view.earth 
+{
+  color: #46697d;
+}
+.mfm-map-view.earth .mfm-attribution
+{
+  color: #46697d;
+  background-color: rgba(197, 178, 138, 0.3);
+}
+.mfm-map-view.earth .mfm-attribution a
+{
+  color: #46697d;
+}
+.mfm-map-view.earth .mfm-attribution a:hover
+{
+  color: #fff;
+}
+.mfm-map-view.earth .mfm-marker.mfm-css-marker
+{
+  height: 0;
+  width: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 20px solid #46697d;
+}
+.mfm-map-view.earth .mfm-marker.mfm-css-marker::before
+{
+  position: absolute;
+  top: -30px;
+  left: -9px;
+  content: " ";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 6px solid #46697d;
+  background-color: #fff;
+}

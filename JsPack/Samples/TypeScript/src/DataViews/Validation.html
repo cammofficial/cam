@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>MindFusion JsGrid Sample - Validation</title>
+    <style type="text/css">
+        .mfdv-grid-cell[data-invalid] {
+            outline: #E2806C solid 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header" style="height: 59px;">
+        <div style="float: left; margin-left: 5px;">
+            <a href="../index.html" style="margin-left: 10px;">Index</a>
+            &nbsp;
+        </div>
+        <div style="float: right; margin-right: 5px;">
+            <a href="../dataviews_Validation.js" style="margin-right: 10px;">View source</a>
+            <button id="expandButton">
+                &rsaquo;
+            </button>
+        </div>
+    </div>
+    <div id="info" style="top: 70px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>
+                About this sample
+            </h1>
+            <p>
+                This sample shows how to perform user input validation. If the entered value is not valid, a
+                red border and a warning popup are shown.
+                <br />
+                The following criteria is checked: <br />
+                - Name is required and should be at least 3 characters long. <br />
+                - Register date is required, should be a valid date and should not be in the future. <br />
+                - Tickets field is required and should be between 1 and 99. <br />
+                - Winnings field is required and should be between 1000 and 10000.
+            </p>
+        </div>
+    </div>
+    <div id="content" style="top: 70px; bottom: 24px;">
+        <div style="position: absolute; width: 100%; height: 100%;">
+            <div id="grid">
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+</body>
+
+</html>

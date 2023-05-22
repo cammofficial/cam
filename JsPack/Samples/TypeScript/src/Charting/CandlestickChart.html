@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>MindFusion Charting Sample - CandlestickChart</title>
+</head>
+<body>
+    <input type="hidden" id="collapsed" />
+	<div id="header" style="height: 49px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="../charting_CandlestickChart.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton" >
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+    <div id="info" style="top: 60px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>About this sample
+            </h1>
+			<p id="pinfo">
+				This sample demonstrates various properties of the CandlestickChart control.
+				Change property values in the panel to see their effect in the chart.
+			</p>
+        </div>
+    </div>
+    <div id="content" style="top: 60px; bottom: 24px; overflow-y: scroll;">
+        <div id="controls" style="height: 100px;">
+
+            <label for="tbCandlestickWidth">CandlestickWidth</label>
+            <input type="range" id="tbCandlestickWidth" min="2" max="20" value="8" />
+            <div style="display: inline-block">
+                <label for="cbDateFormat">DateFormat</label>
+                <select id="cbDateFormat">
+                    <option value="0" selected="selected">CustomDateTime</option>
+                    <option value="1">FullDateTime</option>
+                    <option value="2">LongDate</option>
+                    <option value="3">LongTime</option>
+                    <option value="4">MonthDateTime</option>
+                    <option value="5">None</option>
+                    <option value="6">ShortDate</option>
+                    <option value="7">ShortTime</option>
+                    <option value="8">YearDateTime</option>
+                </select>
+            </div>
+            <input id="tbxCustomDateFormat" type="text" value='{"day":"2-digit"}' />
+
+            <input type="checkbox" id="chbShowZoomWidgets" />
+            <label for="chbShowZoomWidgets">ShowZoomWidgets</label>
+
+            <div style="display: inline-block">
+                <label for="cbGridType">Grid Type</label>
+                <select id="cbGridType">
+                    <option value="0">None</option>
+                    <option value="1">Horizontal</option>
+                    <option value="2" selected="selected">Vertical</option>
+                    <option value="3">Crossed</option>
+                </select>
+            </div>
+
+            <input type="checkbox" id="chbPinGrid" />
+            <label for="chbPinGrid">PinGrid</label>
+        </div>
+        <div style="position: absolute; left: 0px; top: 100px; bottom: 0px; right: 0px">
+			<canvas id="chart" style="width: 100%; height: 100%; display: block;"></canvas>
+        </div>
+    </div>
+
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+</body>
+</html>

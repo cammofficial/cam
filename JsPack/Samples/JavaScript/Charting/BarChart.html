@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>MindFusion Charting Sample - BarChart</title>
+	<link href="common/samples.css" rel="stylesheet" />
+	<script type="text/javascript" src="common/samples.js"></script>
+</head>
+
+<body>
+	<input type="hidden" id="collapsed" />
+	<div id="header" style="height: 49px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="BarChart.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton" onclick="onExpandCollapse()">
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+	<div id="info" style="top: 60px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample
+			</h1>
+			<p id="pinfo">
+				This sample demonstrates various properties of the BarChart control. Change property
+				values in the controls panel to see their effect in chart to the left.
+			</p>
+		</div>
+	</div>
+	<div id="content" style="top: 60px; bottom: 24px; overflow-y: scroll;">
+		<div id="controls" style="height: 200px;">
+			<input type="checkbox" id="chbShowDataLabels" checked="checked" />
+			<label for="chbShowDataLabels">
+				ShowDataLabels
+			</label>
+			<input type="checkbox" id="chbHorizontalBars" />
+			<label for="chbHorizontalBars">
+				HorizontalBars
+			</label>
+			<input type="checkbox" id="chbShowXTicks" checked="checked" />
+			<label for="chbShowXTicks">
+				ShowXTicks
+			</label>
+			<input type="checkbox" id="chbShowYTicks" checked="checked" />
+			<label for="chbShowYTicks">
+				ShowYTicks
+			</label>
+			<input type="checkbox" id="chbShowXCoords" checked="checked" />
+			<label for="chbShowXCoords">
+				ShowXCoordinates
+			</label>
+			<input type="checkbox" id="chbShowYCoords" checked="checked" />
+			<label for="chbShowYCoords">
+				ShowYCoordinates
+			</label>
+			<input type="checkbox" id="chbShowZoomWidgets" />
+			<label for="chbShowZoomWidgets">
+				ShowZoomWidgets
+			</label>
+			<input type="checkbox" id="chbShowLegend" checked="checked" />
+			<label for="chbShowLegend">
+				ShowLegend
+			</label>
+			<br />
+			<div style="display:inline-block">
+				<label for="tbAxisOrigin">YAxis.Origin</label>
+				<input type="range" id="tbAxisOrigin" min="0" max="24" value="0" />
+			</div>
+			<div style="display: inline-block">
+				<label for="tbXAxisMax">
+					XAxis.MaxValue
+				</label>
+				<input type="range" id="tbXAxisMax" min="0" max="24" value="12" />
+			</div>
+			<div style="display: inline-block">
+				<label for="tbXAxisMin">
+					XAxis.MinValue
+				</label>
+				<input type="range" id="tbXAxisMin" min="0" max="10" value="0" />
+			</div>
+			<div style="display: inline-block">
+				<label for="tbYAxisMax">
+					YAxis.MaxValue
+				</label>
+				<input type="range" id="tbYAxisMax" min="1" max="52" value="26" />
+			</div>
+			<div style="display: inline-block">
+				<label for="tbYAxisMin">
+					YAxis.MinValue
+				</label>
+				<input type="range" id="tbYAxisMin" min="0" max="10" value="0" />
+			</div>
+			<div style="display: inline-block">
+				<label for="tbRatio">
+					SpaceRatio
+				</label>
+				<input type="range" id="tbRatio" min="0" max="10" value="2" />
+			</div>
+			<br />
+			<div style="display: inline-block">
+				<label for="cbxBarLayout">
+					BarLayout
+				</label>
+				<select id="cbxBarLayout">
+					<option value="0" selected="selected">SideBySide</option>
+					<option value="1">Stack</option>
+					<option value="2">Overlay</option>
+				</select>
+			</div>
+			<div style="display: inline-block">
+				<label for="cbxGridType">
+					GridType
+				</label>
+				<select id="cbxGridType">
+					<option value="0" selected="selected">None</option>
+					<option value="1">Horizontal</option>
+					<option value="2">Vertical</option>
+					<option value="3">Crossed</option>
+				</select>
+			</div>
+		</div>
+		<div style="position: absolute; left: 0px; top: 200px; bottom: 0px; right: 0px">
+			<canvas id="chart" style="width: 100%; height: 100%; display: block;">
+			</canvas>
+		</div>
+	</div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+
+	<script src="../Scripts/drawing.js" type="text/javascript"></script>
+	<script src="../Scripts/controls.js" type="text/javascript"></script>
+	<script src="../Scripts/common.js" type="text/javascript"></script>
+	<script src="../Scripts/common-collections.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../Scripts/charting.js"></script>
+	<script type="text/javascript" src="BarChart.js"></script>
+</body>
+
+</html>

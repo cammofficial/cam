@@ -1,0 +1,99 @@
+#logo {
+    height: 80px;
+    width: 80px;
+    margin-left: 40px;
+}
+.ok{
+    background-color: black;
+    color: aliceblue;
+}
+
+body > nav {
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+height: 106px !important;
+font-size: 16px !important;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+    margin-top: 5px;
+}
+
+#barra
+{
+    margin-top: 20px;
+}
+
+#barra2
+{
+    margin-top: 20px;
+    margin-right: 450px;
+}
+
+.fondo {
+ 
+   background-image: url(/app/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+
+#clock {
+    font-size: 3em;
+    font-family: 'Righteous', cursive;
+
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    width: 230px; 
+     height: 100px; 
+     background: transparent;
+     position: relative;
+     left: 850px;
+     margin-top: 200px;
+  }
+  #day {
+    font-size: 3em;
+    font-family: 'Righteous', cursive;
+
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    width: 230px; 
+     height: 100px; 
+     background: transparent;
+     position: relative;
+     left: 815px;
+     margin-top: -30px;
+  }
+  #boton {
+    font-size: 2em;
+    font-family: 'Righteous', cursive;
+
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    width: 230px; 
+     height: 100px; 
+     background: transparent;
+     position: relative;
+     margin-left: 854px;
+     margin-top: 8px;
+  }
+
+  #text {
+       font-size: 2em;
+    font-family: 'Righteous', cursive;
+    color: white;
+    position: relative;
+     left: 770px;
+     margin-top: -560px;
+  }

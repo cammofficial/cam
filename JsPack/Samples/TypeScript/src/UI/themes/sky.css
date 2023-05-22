@@ -1,0 +1,272 @@
+.mfc-dialog.sky .mfc-dialog-button {
+    color: #404040;
+    background-color: #e6e6e6;
+	font-weight: bold;
+    border: solid 1px #999;
+    border-radius: 5px;
+    padding: 10px;
+}
+.mfc-dialog.sky .mfc-dialog-button:hover
+{
+    background-color: rgba(0, 0, 0, 0.3);
+}.mfc-listview.sky 
+{
+    color: #fff;
+    background-color:  #83b5ce;
+}
+.mfc-listview.sky .mfc-listview-item
+{
+    border-bottom: solid 1px  #fff;
+    padding: 10px;
+}
+.mfc-listview.sky .mfc-listview-item.mfc-active
+{
+    font-weight: bold;
+}
+.mfc-listview.sky .mfc-listview-item.mfc-selected
+{
+    background-color: #fff;
+    color: #83b5ce;
+} 
+.mfc-menu-content.sky 
+{
+    color: #404040;
+    background-color: #83b5ce;
+}
+.mfc-menu-content.mfc-menuitem-children.sky 
+{
+    border-left: 5px solid #fff;
+}
+.mfc-menu-content.sky .mfc-menuitem-header
+{
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+.mfc-menu-content.sky .mfc-menuitem-header > a
+{
+    padding: 5px;
+    color:  #fff;
+}
+.mfc-menu-content.sky .mfc-menuitem.mfc-active > .mfc-menuitem-header
+{
+    background-color: #fff;
+}
+.mfc-menu-content.sky .mfc-menuitem.mfc-active > .mfc-menuitem-header > a
+{
+    color: #83b5ce;
+}
+.mfc-menu-content.sky .mfc-menuitem .mfc-menuitem-image {
+    background: url("icons/black/small.png");
+    background-position: -80px 0;
+}
+.mfc-menu-content.sky.mfc-menuitem-children
+{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+}
+.mfc-menu-content.sky.mfc-menuitem-expanded.mfc-menuitem-children
+{
+   display: block;
+   visibility: visible;
+   opacity: 1;
+   transition-delay:0s;
+}
+.mfc-tabcontrol.sky .mfc-tabstrip .mfc-toolstrip-item
+{
+    background-color: #83b5ce;
+    color: #fff;
+}
+.mfc-tabcontrol.mfc-tabcontrol-vertical.sky .mfc-tabstrip .mfc-toolstrip-item.mfc-selected > div,
+.mfc-tabcontrol.mfc-tabcontrol-horizontal.sky .mfc-tabstrip .mfc-toolstrip-item.mfc-selected > div
+{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.mfc-tabcontrol.sky > ul
+{
+    border: 1px solid #404040;
+    background-color: #fff;
+}
+.mfc-tabcontrol.sky .mfc-tabbutton-close
+{
+    background: url("icons/white/small.png");
+    background-position: -48px 0;
+}.mfc-toolstrip.mfc-toolstrip-scrollable.sky .mfc-toolstrip-cue-prev,
+.mfc-toolstrip.mfc-toolstrip-scrollable.sky .mfc-toolstrip-cue-next
+{
+    background: url("icons/white/small.png");
+}
+.mfc-toolstrip.sky
+{
+    color: #fff;
+    background-color: #83b5ce;
+    border: 1px solid;
+}
+.mfc-toolstrip.sky .mfc-toolstrip-item
+{
+    padding: 0 10px;
+}
+.mfc-toolstrip.sky .mfc-toolstrip-item.mfc-active
+{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.mfc-windowhost.sky .mfc-toolstrip.mfc-toolstrip-collapsible::after
+{
+    content: "...";
+    position: absolute;
+    border: none;
+    transform: rotate(90deg) translate(0, -11px);
+    font-size: x-large
+}
+.mfc-windowhost.sky .mfc-toolstrip.mfc-toolstrip-collapsible.mfc-expanded::after
+{
+    content: "";
+}.mfc-tooltip.sky {
+    color: #fff;
+    background-color: #83b5ce;
+    border: solid 1px #fff;
+}
+
+.mfc-tooltip-right.sky::after {
+    border-color: transparent #83b5ce transparent transparent;
+}
+
+.mfc-tooltip-left.sky::after {
+    border-color: transparent transparent transparent #83b5ce;
+}
+
+.mfc-tooltip-bottom.sky::after {
+    border-color: transparent transparent #83b5ce transparent;
+}
+
+.mfc-tooltip-top.sky::after {
+    border-color: #83b5ce transparent transparent transparent;
+}
+
+.mfc-tooltip-right.sky::before {
+    border-color: transparent #fff transparent transparent;
+}
+
+.mfc-tooltip-left.sky::before {
+    border-color: transparent transparent transparent #fff;
+}
+
+.mfc-tooltip-bottom.sky::before {
+    border-color: transparent transparent #fff transparent;
+}
+
+.mfc-tooltip-top.sky::before {
+    border-color: #fff transparent transparent transparent;
+}.mfc-treeview.sky 
+{
+    color: #83b5ce;
+    background-color: #fff;
+}
+.mfc-treeview.sky .mfc-treenode-header
+{
+    padding: 10px;
+}
+.mfc-treeview.sky .mfc-treenode-header > a
+{
+    padding: 5px;
+}
+.mfc-treeview.sky .mfc-treenode.mfc-active > .mfc-treenode-header > a
+{
+    border:1px solid #83b5ce;
+    margin: -1px;
+}
+.mfc-treeview.sky .mfc-treenode.mfc-selected > .mfc-treenode-header
+{
+    background-color: #83b5ce;
+    color: #fff;
+} 
+/*.mfc-treeview.sky .mfc-treenode .mfc-treenode-image 
+{
+     background: url("icons/black/small.png");
+     background-position: -80px 0;
+ }*/
+.mfc-treeview.sky .mfc-treenode-expanded .mfc-indent:last-of-type
+{
+    border-bottom: 1px dashed #83b5ce;
+    border-left: 1px dashed #83b5ce;
+    transform: scale(0.7);
+}
+.mfc-treeview.sky .mfc-treenode-image {
+    background: none;
+    text-align: right;
+}
+.mfc-treeview.sky .mfc-treenode-image::after
+{
+    content: "+";
+}
+.mfc-treeview.sky .mfc-treenode-expanded > .mfc-treenode-header > .mfc-treenode-image::after
+{
+    content: "-";
+}.mfc-windowhost.sky
+{
+    background-color: #fff;
+    border: 1px solid #83b5ce;
+}
+.mfc-window.sky
+{
+    color: #404040;
+    background-color: #fff;
+    border-color: #999;
+}
+.mfc-windowhost.sky .mfc-windowhost-toolstrip,
+.mfc-window.sky .mfc-header,
+.mfc-window.sky .mfc-footer
+{
+    background-color: #83b5ce;
+    color: #404040;
+	font-size: 14pt;
+	width: 400px;
+	height: 50px;
+	font: 120% Arial, Helvetica, sans-serif;
+}
+
+.mfc-window.sky .mfc-footer{
+    height: 0px;
+}
+.mfc-window.sky .mfc-header .mfc-title
+{
+    padding: 10px;	
+	margin-bottom: 20px;
+}
+.mfc-window.sky .mfc-content
+{
+    background-color: #fff;
+}
+.mfc-window.sky .mfc-resize
+{
+    background-color: #83b5ce;
+}
+.mfc-window.sky .mfc-window-toolstrip .mfc-toolbutton-default a
+{
+    background-image: url("icons/white/small.png");
+}
+.mfc-windowhost.sky .mfc-windowhost-toolstrip .mfc-toolstrip-item.mfc-toolbutton-show-all a
+{
+    background-image: url("icons/white/show-all.png");
+} 
+.mfc-windowhost.sky .mfc-windowhost-toolstrip .mfc-toolstrip-item.mfc-toolbutton-restore-all a
+{
+    background-image: url("icons/white/restore-all.png");
+} 
+.mfc-windowhost.sky .mfc-windowhost-toolstrip .mfc-toolstrip-item.mfc-toolbutton-minimize-all a
+{
+    background-image: url("icons/white/minimize-all.png");
+} 
+.mfc-windowhost.sky .mfc-windowhost-toolstrip .mfc-toolstrip-item.mfc-toolbutton-close-all a
+{
+    background-image: url("icons/white/close-all.png");
+} 
+.mfc-windowhost.sky .mfc-windowhost-toolstrip .mfc-toolstrip-item.mfc-active
+{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.mfc-windowhost.sky .mfc-windowhost-toolstrip.mfc-maximized-toolstrip .mfc-toolstrip-item.mfc-toolbutton-label.mfc-selected
+{
+    font-weight: bold;
+}

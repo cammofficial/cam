@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Theme>
+  <Properties>
+    <TitleFontName>Arial</TitleFontName>
+    <TitleFontSize>20</TitleFontSize>
+    <TitleFontStyle>0</TitleFontStyle>
+    <TitleBrush Id="0" />
+    <SubtitleFontName>Arial</SubtitleFontName>
+    <SubtitleFontSize>12</SubtitleFontSize>
+    <SubtitleFontStyle>0</SubtitleFontStyle>
+    <SubtitleBrush Id="0" />
+    <AxisLabelsFontName>Verdana</AxisLabelsFontName>
+    <AxisLabelsFontSize>8</AxisLabelsFontSize>
+    <AxisLabelsFontStyle>0</AxisLabelsFontStyle>
+    <AxisLabelsBrush Id="0" />
+    <AxisTitleFontName>Verdana</AxisTitleFontName>
+    <AxisTitleFontSize>9</AxisTitleFontSize>
+    <AxisTitleFontStyle>0</AxisTitleFontStyle>
+    <AxisTitleBrush Id="0" />
+    <DataLabelsFontName>Arial</DataLabelsFontName>
+    <DataLabelsFontSize>8</DataLabelsFontSize>
+    <DataLabelsFontStyle>0</DataLabelsFontStyle>
+    <DataLabelsBrush Id="0" />
+    <WidgetFontName>Verdana</WidgetFontName>
+    <WidgetFontSize>9</WidgetFontSize>
+    <WidgetFontStyle>1</WidgetFontStyle>
+    <WidgetBrush Id="1" />
+    <LegendTitleFontName>Verdana</LegendTitleFontName>
+    <LegendTitleFontSize>11</LegendTitleFontSize>
+    <LegendTitleFontStyle>0</LegendTitleFontStyle>
+    <LegendTitleBrush Id="0" />
+    <PlotBorderStrokeThickness>1</PlotBorderStrokeThickness>
+    <PlotBorderStrokeDashStyle>0</PlotBorderStrokeDashStyle>
+    <LegendBackground Id="2" />
+    <LegendBorderStroke Id="3" />
+    <LegendBorderStrokeThickness>1</LegendBorderStrokeThickness>
+    <LegendBorderStrokeDashStyle>0</LegendBorderStrokeDashStyle>
+    <AxisStroke Id="3" />
+    <AxisStrokeThickness>1</AxisStrokeThickness>
+    <AxisStrokeDashStyle>0</AxisStrokeDashStyle>
+    <HighlightStroke Id="4" />
+    <HighlightStrokeThickness>2</HighlightStrokeThickness>
+    <HighlightStrokeDashStyle>0</HighlightStrokeDashStyle>
+    <GridLineColor>#FFC0C0C0</GridLineColor>
+    <GridLineThickness>1</GridLineThickness>
+    <GridLineStyle>0</GridLineStyle>
+    <GridColor1>#FFFFFFFF</GridColor1>
+    <GridColor2>#FFFFFFFF</GridColor2>
+    <GaugeBackground Id="3" />
+    <GaugeStroke Id="5" />
+    <GaugeStrokeThickness>2</GaugeStrokeThickness>
+    <GaugeScaleBackground Id="2" />
+    <GaugeScaleStroke Id="6" />
+    <GaugeScaleStrokeThickness>1</GaugeScaleStrokeThickness>
+    <GaugePointerBackground Id="7" />
+    <GaugePointerStroke Id="8" />
+    <GaugePointerStrokeThickness>2</GaugePointerStrokeThickness>
+    <GaugeTickBackground Id="9" />
+    <GaugeTickStroke Id="6" />
+    <GaugeTickStrokeThickness>1</GaugeTickStrokeThickness>
+    <GaugeFontName>Verdana</GaugeFontName>
+    <GaugeFontStyle>0</GaugeFontStyle>
+    <UniformSeriesFill Id="10" />
+    <UniformSeriesStroke Id="10" />
+    <UniformSeriesStrokeThickness>1</UniformSeriesStrokeThickness>
+    <UniformSeriesStrokeDashStyle>0</UniformSeriesStrokeDashStyle>
+    <SeriesFills>
+      <FillList>
+        <Brush Id="10" />
+        <Brush Id="3" />
+        <Brush Id="8" />
+        <Brush Id="9" />
+        <Brush Id="7" />
+      </FillList>
+    </SeriesFills>
+    <SeriesStrokes>
+      <StrokeList>
+        <Brush Id="10" />
+        <Brush Id="3" />
+        <Brush Id="8" />
+        <Brush Id="9" />
+        <Brush Id="7" />
+      </StrokeList>
+    </SeriesStrokes>
+  </Properties>
+  <Resources>
+    <Brushes>
+      <Brush Index="8" Type="Solid">
+        <Color>#FFCE0000</Color>
+      </Brush>
+      <Brush Index="1" Type="Solid">
+        <Color>#FFE0E9E9</Color>
+      </Brush>
+      <Brush Index="6" Type="Solid">
+        <Color>#FF696969</Color>
+      </Brush>
+      <Brush Index="3" Type="Solid">
+        <Color>#FFC0C0C0</Color>
+      </Brush>
+      <Brush Index="0" Type="Solid">
+        <Color>#FF5A5A5A</Color>
+      </Brush>
+      <Brush Index="7" Type="Solid">
+        <Color>#FF9CAAC6</Color>
+      </Brush>
+      <Brush Index="2" Type="Solid">
+        <Color>#FFF5F5F5</Color>
+      </Brush>
+      <Brush Index="10" Type="Solid">
+        <Color>#FF669ACC</Color>
+      </Brush>
+      <Brush Index="5" Type="Solid">
+        <Color>#FF003466</Color>
+      </Brush>
+      <Brush Index="9" Type="Solid">
+        <Color>#FF5A79A5</Color>
+      </Brush>
+      <Brush Index="4" Type="Solid">
+        <Color>#FF000063</Color>
+      </Brush>
+    </Brushes>
+    <Images Count="0" />
+  </Resources>
+</Theme>

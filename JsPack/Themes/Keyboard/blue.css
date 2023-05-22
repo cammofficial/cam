@@ -1,0 +1,21 @@
+.mfk-keyboard.blue
+{
+    color: #fff;
+    background-color: #bbcbd2;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+}
+.mfk-keyboard.blue .mfk-key
+{
+    background-color: #495f77;
+    border-color: #fff;
+    color: #fff;
+}
+.mfk-keyboard.blue .mfk-key:hover
+{
+    background-color: #eeaa7b;
+}
+.mfk-keyboard.blue .mfk-key-down
+{
+	 border-style: inset;
+}
+/*  box-shadow:inset 0px -10px 25px rgba(0,0,0,.5),0px 5px 5px #333;*/

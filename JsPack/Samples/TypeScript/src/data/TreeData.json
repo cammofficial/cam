@@ -1,0 +1,41 @@
+﻿{ "project" : 
+	{"title": "project", "items":[
+		{"title":"Truck #1010", 
+			"items":[
+				{"title":"Destination A", 
+					"items":[]},
+				{"title":"Destination B", 
+					"items":[
+						{"title":"Delivery time 1"},
+						{"title":"Delivery time 2"},
+						{"title":"Delivery time 3"}]},
+				{"title":"Destination C",
+					"items":[
+						{"title":"Delivery time 1"},
+						{"title":"Delivery time 2"}]}
+		]},
+		{"title":"Truck #2000", 
+			"items":[
+				{"title":"Destination A", 
+					"items":[
+						{"title":"Delivery time 1"},
+						{"title":"Delivery time 2"},
+						{"title":"Delivery time 3"}]},
+				{"title":"Destination C", 
+					"items":[
+						{"title":"Delivery time 1"},
+						{"title":"Delivery time 2"}]}
+		]},
+		{"title":"Truck #3033", 
+			"items":[
+				{"title":"Destination D", 
+					"items":[
+						{"title":"Delivery time 1"},
+						{"title":"Delivery time 2"},
+						{"title":"Delivery time 3"},
+						{"title":"Delivery time 4"}]},
+				{"title":"Destination A"}
+		]},
+		{"title":"Truck #4444", "items":[]}
+	]}
+}

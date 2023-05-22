@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>MindFusion JS UI Sample - Windows</title>
+	<style type="text/css">
+		body {
+			font-family: Tahoma, Verdana, Segoe, sans-serif;
+		}
+
+		/* Setting the box-sizing to avoid page scrollbars */
+		#host {
+			box-sizing: border-box;
+		}
+
+		/* Override the default color of window content */
+		.mfc-window .mfc-content {
+			background-color: #fff !important;
+		}
+
+		/* The class for the list item template element */
+		.mfc-listview-item .templateClass {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-radius: 10px 10px 10px 0;
+			text-align: center;
+		}
+
+		/* The class for the active list item template element */
+		.mfc-listview-item.mfc-active .templateClass {
+			background-color: #91b3bc;
+		}
+	</style>
+</head>
+<body>
+	<div id="header" style="height: 59px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="Windows.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton">
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+	<div id="info" style="top: 70px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample
+			</h1>
+			<p id="pinfo">
+				This sample shows how to create templated windows in a WindowHost control.
+				Each of the windows displays a templated ListView control, and a Tooltip control is attached to its
+				header element.
+				Window interaction events are handled to temporarily disable the attached tooltip during drag and resize
+				interactions.
+			</p>
+		</div>
+	</div>
+	<div id="content" style="top: 70px; bottom: 24px;">
+		<div id="host">
+		</div>
+	</div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+</body>
+
+</html>

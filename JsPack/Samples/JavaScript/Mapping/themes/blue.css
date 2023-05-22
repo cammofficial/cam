@@ -1,0 +1,116 @@
+.mfm-map-view.blue .mfm-bubble{
+  color: #495f77;
+  background-color: #fff;
+  border: solid 1px #495f77;
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-map-view.blue .mfm-bubble::before {
+  border-color: #495f77 transparent transparent transparent;
+}
+.mfm-map-view.blue .mfm-bubble::after {
+  border-color: #fff transparent transparent transparent;
+}
+.mfm-map-view.blue .mfm-bubble.mfm-hidden
+{
+  transition:visibility 0s linear 0.2s,opacity 0.2s linear;
+}
+.mfm-map-view.blue .mfm-bubble:not(.mfm-hidden)
+{
+  transition-delay:0s;
+  transition: opacity 0.2s linear;
+}.mfm-map-view .mfm-zoom-controller.blue
+{
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-zoom-controller.blue
+{
+  border:1px solid #495f77;
+  border-radius: 3px;
+}
+.mfm-zoom-controller.blue a
+{
+  color: #fff;
+  background-color: #495f77;
+}
+.mfm-zoom-controller.blue a:first-child
+{
+  border-bottom :1px solid #fff;
+}
+.mfm-zoom-controller.blue a:hover
+{
+  background-color: #eeaa7b;
+}
+.mfm-zoom-controller.blue a.mfm-disabled
+{
+  background-color: #efefef;
+  color: #aaa;
+}
+.mfm-map-view .mfm-layer-controller.blue
+{
+  color: #fff;
+  background-color: #495f77;
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-layer-controller.blue
+{
+  border:1px solid #666;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.mfm-layer-controller.blue > div:not(:last-child)
+{
+  border-bottom :1px solid #fff;
+}
+.mfm-layer-controller.blue > div:hover
+{
+  background-color: #eeaa7b;
+}.mfm-map-view.blue .mfm-hint{
+  background-color: #495f77;
+  color: #fff;
+}
+.mfm-map-view.blue .mfm-hint.mfm-hidden
+{
+  transform:scaleY(0);
+  transition: all 0.3s; 
+}
+.mfm-map-view.blue .mfm-hint:not(.mfm-hidden)
+{
+  transform:scaleY(1);
+  transition: all 0.3s; 
+}.mfm-map-view.blue 
+{
+  color: #495f77;
+}
+.mfm-map-view.blue .mfm-attribution
+{
+  color: #495f77;
+  background-color: rgba(73, 95, 119,0.3);
+}
+.mfm-map-view.blue .mfm-attribution a
+{
+  color: #495f77;
+}
+.mfm-map-view.blue .mfm-attribution a:hover
+{
+  color: #eeaa7b;
+}
+.mfm-map-view.blue .mfm-marker.mfm-css-marker
+{
+  height: 0;
+  width: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 20px solid #eeaa7b;
+}
+.mfm-map-view.blue .mfm-marker.mfm-css-marker::before
+{
+  position: absolute;
+  top: -30px;
+  left: -9px;
+  content: " ";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 6px solid #eeaa7b;
+  background-color: #fff;
+}

@@ -1,0 +1,56 @@
+#logo
+{
+    height: 80px;
+    width: 80px;
+    margin-left: 40px;
+}
+
+#barra
+{
+    margin-top: 20px;
+}
+
+#barra2
+{
+    margin-top: 20px;
+    margin-right: 450px;
+}
+
+.fondo {
+ 
+   background-image: url(fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    z-index: 1;
+ 
+}
+
+#registro
+{
+    position: relative;
+    left: 1080px;
+
+}
+
+#sesion
+{
+    position: relative;
+    left: 1100px
+
+}
+
+#H {
+
+position: relative;
+left: 2.2%;
+margin-top: 5%;
+color: white;
+font-family: 'Rock Salt', cursive;
+}
+#logout
+{
+    position: relative;
+    left: 1300px
+
+}

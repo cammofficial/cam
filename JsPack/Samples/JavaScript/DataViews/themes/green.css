@@ -1,0 +1,80 @@
+.mfdv-grid.green
+{
+    background-color: #e0e8c7;
+    color:  #5D544F;
+    border: 1px solid #505858;
+}
+.mfdv-grid.green .mfdv-grid-header,
+.mfdv-grid.green .mfdv-grid-scroll-wrapper div
+{
+    background-color: #829640;
+    color:  #fff;
+}
+.mfdv-grid.green .mfdv-grid-header div[data-column]
+{
+    padding: 10px;
+    border-right: 1px solid #505858;
+}
+.mfdv-grid.green .mfdv-grid-data-table > div:nth-child(even):not(.mfdv-grid-group-row)
+{
+    background-color: #f8ffe2;
+}
+.mfdv-grid.green .mfdv-grid-data-table .mfdv-grid-cell
+{
+    border-right: solid 1px #505858;;
+    padding: 10px;
+}
+.mfdv-grid.green .mfdv-grid-row-header
+{
+    background-color: #829640;  
+    border-bottom: 1px solid #505858;
+    border-right: 1px solid #fff;
+}
+.mfdv-grid.green mfdv-grid-table-corner
+{
+    border: none;
+}
+.mfdv-grid.green .mfdv-grid-group-row
+{
+    background-color: #829640;
+    color:  #fff;
+    padding: 4px;
+    border-bottom: 1px solid #505858;
+}
+.mfdv-grid.green .mfdv-grid-row-header[data-selected],
+.mfdv-grid.green .mfdv-grid-cell[data-selected]
+{
+    background-color: #505858;
+    color:  #fff;
+}
+.mfdv-grid.green .mfdv-grid-context-menu
+{
+    background-color: #f8ffe2;
+}.mfdv-propertygrid.green .mfdv-grid
+{
+    border:0;
+}
+.mfdv-propertygrid.green .mfc-toolstrip-item.mfdv-sort-indicator-icon-asc
+{
+    background: url("icons/white/sort-az.png") no-repeat;
+}
+.mfdv-propertygrid.green .mfc-toolstrip-item.mfdv-sort-indicator-icon-desc
+{
+    background: url("icons/white/sort-za.png") no-repeat;
+}
+.mfdv-propertygrid.green .mfc-toolstrip-item.mfdv-group-indicator-icon-off
+{
+    background: url("icons/white/group.png") no-repeat;
+}
+.mfdv-propertygrid.green .mfc-toolstrip-item.mfdv-group-indicator-icon-on
+{
+    background: url("icons/white/ungroup.png") no-repeat;
+}
+.mfdv-propertygrid.green .mfdv-grid-data-table .mfdv-grid-cell
+{
+    padding: 4px;
+}
+.mfdv-propertygrid.green .mfdv-grid-data-table > div:nth-child(even):not(.mfdv-grid-group-row)
+{
+    background-color: #e0e8c7;
+}

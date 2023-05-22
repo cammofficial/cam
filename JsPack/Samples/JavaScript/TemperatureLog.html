@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>MindFusion JsPack Sample - Temperature Log</title>
+	<script type="text/javascript" src="common/samples.js"></script>
+	<link href="common/samples.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="Scheduling/themes/earth.css" />
+	<link rel="stylesheet" type="text/css" href="UI/themes/earth.css" />
+	<style type="text/css">
+		.container {
+			width: 100%;
+			height: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div id="header" style="height: 49px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="TemperatureLog.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton" onclick="onExpandCollapse()">
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+	<div id="info" style="top: 60px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample
+			</h1>
+			<p>
+				A temperature data logger application. Clicking on a calendar day cell shows a window,
+				containing a thermometer gauge, which allows you to choose the temperature for the
+				day. The chart below shows a visual representation of the recorded data.
+			</p>
+		</div>
+	</div>
+	<div id="content" style="top: 60px; bottom: 24px;">
+		<div id="win" style="z-index: 2;">
+		</div>
+		<div class="container">
+			<div id="calendar" style="height: 100%; width: 100%;">
+			</div>
+		</div>
+		<div class="container">
+			<canvas id="chart" style="width: 100%; height: 100%; display: block;"></canvas>
+		</div>
+	</div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+	<script src="Scripts/collections.js" type="text/javascript"></script>
+	<script src="Scripts/drawing.js" type="text/javascript"></script>
+	<script src="Scripts/controls.js" type="text/javascript"></script>
+	<script src="Scripts/common.js" type="text/javascript"></script>
+	<script src="Scripts/common-collections.js" type="text/javascript"></script>
+	<script src="Scripts/common-ui.js" type="text/javascript"></script>
+	<script src="Scripts/scheduling.js" type="text/javascript"></script>
+	<script src="Scripts/gauges.js" type="text/javascript"></script>
+	<script src="Scripts/charting.js" type="text/javascript"></script>
+	<script src="TemperatureLog.js" type="text/javascript"></script>
+</body>
+</html>

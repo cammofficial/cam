@@ -1,0 +1,20 @@
+.mfk-keyboard.business
+{
+    color: #fff;
+    background-color: #e0e9e9;
+    border: 1px solid;
+}
+.mfk-keyboard.business .mfk-key
+{
+    background-color: #5a79a5;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.mfk-keyboard.business .mfk-key:hover
+{
+    background-color: #ce0000;
+}
+.mfk-keyboard.business .mfk-key-down
+{
+   border-width: 2px;
+}

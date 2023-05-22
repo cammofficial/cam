@@ -1,0 +1,120 @@
+.mfm-map-view.light .mfm-bubble{
+  color: #747474;
+  background-color: #fff;
+  border: solid 1px #d4d4d4;
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-map-view.light .mfm-bubble::before {
+  border-color: #d4d4d4 transparent transparent transparent;
+}
+.mfm-map-view.light .mfm-bubble::after {
+  border-color: #fff transparent transparent transparent;
+}
+.mfm-map-view.light .mfm-bubble.mfm-hidden
+{
+  transition:visibility 0s linear 0.2s,opacity 0.2s linear;
+}
+.mfm-map-view.light .mfm-bubble:not(.mfm-hidden)
+{
+  transition-delay:0s;
+  transition: opacity 0.2s linear;
+}
+.mfm-map-view.light .mfm-bubble > .mfm-button-close:hover
+{
+  color: #bdf07c;
+}.mfm-map-view .mfm-zoom-controller.light
+{
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-zoom-controller.light
+{
+  border:1px solid #d4d4d4;
+  border-radius: 3px;
+}
+.mfm-zoom-controller.light a
+{
+  color: #747474;
+  background-color: #fff;
+}
+.mfm-zoom-controller.light a:first-child
+{
+  border-bottom :1px solid #d4d4d4;
+}
+.mfm-zoom-controller.light a:hover
+{
+  color: #bdf07c;
+}
+.mfm-zoom-controller.light a.mfm-disabled
+{
+  background-color: #efefef;
+  color: #aaa;
+}
+.mfm-map-view .mfm-layer-controller.light
+{
+  color: #747474;
+  background-color: #fff;
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-layer-controller.light
+{
+  border:1px solid #d4d4d4;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.mfm-layer-controller.light > div:not(:last-child)
+{
+  border-bottom :1px solid #d4d4d4;
+}
+.mfm-layer-controller.light > div:hover
+{
+  color: #bdf07c;
+}.mfm-map-view.light .mfm-hint{
+  background-color: #fff;
+  color: #747474;
+}
+.mfm-map-view.light .mfm-hint.mfm-hidden
+{
+  transform:scaleY(0);
+  transition: all 0.3s; 
+}
+.mfm-map-view.light .mfm-hint:not(.mfm-hidden)
+{
+  transform:scaleY(1);
+  transition: all 0.3s; 
+}.mfm-map-view.light 
+{
+  color: #747474;
+}
+.mfm-map-view.light .mfm-attribution
+{
+  color: #747474;
+  background-color: rgba(255,255,255,0.3);
+}
+.mfm-map-view.light .mfm-attribution a
+{
+  color: #747474;
+}
+.mfm-map-view.light .mfm-attribution a:hover
+{
+  color: #bdf07c;
+}
+.mfm-map-view.light .mfm-marker.mfm-css-marker
+{
+  height: 0;
+  width: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 20px solid #bdf07c;
+}
+.mfm-map-view.light .mfm-marker.mfm-css-marker::before
+{
+  position: absolute;
+  top: -30px;
+  left: -9px;
+  content: " ";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 6px solid #bdf07c;
+  background-color: #fff;
+}

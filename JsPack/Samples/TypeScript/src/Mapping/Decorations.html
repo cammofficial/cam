@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>MindFusion JsMapping Sample - Decorations</title>
+	<style type="text/css">
+		.mfm-bubble p {
+			font-weight: bold;
+			margin: 0 0 5px 0;
+		}
+
+		.mfm-bubble p.b-wrap {
+			width: 300px;
+			white-space: normal;
+			font-weight: normal;
+		}
+
+		.mfm-bubble.caption:before,
+		.mfm-bubble.caption:after {
+			border: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="header" style="height: 59px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a> &nbsp; Theme&nbsp;<select id="theme">
+				<option value="">none</option>
+				<option value="standard" selected="selected">standard</option>
+				<option value="light">light</option>
+				<option value="business">business</option>
+				<option value="green">green</option>
+				<option value="blue">blue</option>
+				<option value="gray">gray</option>
+				<option value="peach">peach</option>
+				<option value="earth">earth</option>
+				<option value="pastel">pastel</option>
+			</select>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="../mapping_Decorations.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton">
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+	<div id="info" style="top: 70px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample
+			</h1>
+			<p>
+				This sample shows the different types of decorations, supported by JsMapping.
+				<br />
+				Decoration layers can display Marker and Bubble objects, associated with a given
+				geographic location. Markers can show a custom icon, specified by the imageSrc property,
+				or they can be styled by css. The string specified by the text property will be
+				shown as a hint when the marker is hovered. Bubbles display the plain text or HTML
+				string, specified by their text property.
+				<br />
+				The built-in layers list controller shows the list of all layers (map layers on
+				top and overlays below) and provides an easy way to control their visibility.
+			</p>
+		</div>
+	</div>
+	<div id="content" style="top: 70px; bottom: 24px;">
+		<div style="position: absolute; width: 100%; height: 100%;">
+			<div id="mapView" style="height: 100%; width: 100%;">
+			</div>
+		</div>
+	</div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+</body>
+
+</html>

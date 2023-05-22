@@ -1,0 +1,20 @@
+.mfk-keyboard.standard
+{
+     background-color: #B4B4BE;
+}
+.mfk-keyboard.standard .mfk-key
+{
+    color: #fff;
+    background-color: #818284;
+    border: solid 1px #6E6E78;
+}
+.mfk-keyboard.standard .mfk-key:hover
+{
+    color: #fff;
+    background-color: #c71c22;
+    border: solid 1px #8C8C96;
+}
+.mfk-keyboard.standard .mfk-key-down
+{
+    transform: translate(1px,1px);
+}

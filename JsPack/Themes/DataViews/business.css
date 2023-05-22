@@ -1,0 +1,83 @@
+.mfdv-grid.business
+{
+    color: #5a79a5;
+    background-color: #fff;
+    border: 1px solid #5a79a5;
+}
+.mfdv-grid.business .mfdv-grid-header,
+.mfdv-grid.business .mfdv-grid-scroll-wrapper div
+{
+    background-color: #5a79a5;
+    color: #fff;
+}
+.mfdv-grid.business .mfdv-grid-header div[data-column]
+{
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+.mfdv-grid.business .mfdv-grid-data-table > div:nth-child(even):not(.mfdv-grid-group-row)
+{
+    background-color: #e0e9e9;
+}
+.mfdv-grid.business .mfdv-grid-data-table .mfdv-grid-cell
+{
+    padding: 10px;
+    border-right: 1px solid #5a79a5;
+}
+.mfdv-grid.business .mfdv-grid-row-header
+{
+    background-color: #ccc;
+    border-bottom: 1px solid #5a79a5;
+    border-right: 1px solid #5a79a5;
+}
+.mfdv-grid.business .mfdv-grid-group-row
+{
+    background-color: #e0e9e9;
+    padding: 4px;
+    border-bottom: 1px solid #5a79a5;
+}
+.mfdv-grid.business .mfdv-grid-row-header[data-selected]
+{
+    background-color: #5a79a5;
+    border-bottom: 1px solid #fff;
+}
+.mfdv-grid.business .mfdv-grid-cell[data-selected]
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}.mfdv-propertygrid.business
+{
+    border: 1px solid #5a79a5;
+}
+.mfdv-propertygrid.business .mfdv-grid,
+.mfdv-propertygrid.business .mfc-tabcontrol.business > ul
+{
+    border:0;
+}
+.mfdv-propertygrid.business .mfc-toolstrip-item.mfdv-sort-indicator-icon-asc
+{
+    background: url("icons/white/sort-az.png") no-repeat;
+}
+.mfdv-propertygrid.business .mfc-toolstrip-item.mfdv-sort-indicator-icon-desc
+{
+    background: url("icons/white/sort-za.png") no-repeat;
+}
+.mfdv-propertygrid.business .mfc-toolstrip-item.mfdv-group-indicator-icon-off
+{
+    background: url("icons/white/group.png") no-repeat;
+}
+.mfdv-propertygrid.business .mfc-toolstrip-item.mfdv-group-indicator-icon-on
+{
+    background: url("icons/white/ungroup.png") no-repeat;
+}
+.mfdv-propertygrid.business .mfdv-grid-data-table .mfdv-grid-cell
+{
+    padding: 4px;
+}
+.mfdv-propertygrid.business .mfdv-grid-data-table > div:nth-child(even):not(.mfdv-grid-group-row)
+{
+    background-color: #fff;
+}
+.mfdv-propertygrid.business .mfdv-grid-data-table .mfdv-grid-cell
+{
+    border-bottom:1px solid #5a79a5;
+}

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>MindFusion VirtualKeyboard Sample - Demo</title>
+	<style type="text/css">
+		#controls input,
+		#controls select {
+			margin: 10px 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="header" style="height: 49px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="../keyboard_Demo.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton">
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+	<div id="info" style="top: 60px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample
+			</h1>
+			<p>
+				A sample program that shows the basic usage of the MindFusion Virtual Keyboard.
+			</p>
+		</div>
+	</div>
+	<div id="content" style="top: 60px; bottom: 24px;">
+		<div id="controls" style="width: 100%; height: 220px; padding: 10px; overflow-y: auto;">
+			<div>
+				<label for="mode">
+					Layout:
+				</label>
+				<select id="mode" name="mode">
+					<option value="0" selected="selected">Compact</option>
+					<option value="1">Default</option>
+					<option value="2">Extended</option>
+				</select>
+				<label style="margin-left: 20px" for="lang">
+					Input Language:
+				</label>
+				<select id="lang" name="lang">
+					<option value="en" selected="selected">English</option>
+					<option value="de">German</option>
+					<option value="fr">French</option>
+				</select>
+				<label style="margin-left: 20px" for="theme">
+					Theme:
+				</label>
+				<select id="theme">
+					<option value="" selected="selected">none</option>
+					<option value="standard">standard</option>
+					<option value="light">light</option>
+					<option value="business">business</option>
+					<option value="green">green</option>
+					<option value="blue">blue</option>
+					<option value="gray">gray</option>
+					<option value="peach">peach</option>
+					<option value="earth">earth</option>
+					<option value="pastel">pastel</option>
+				</select>
+			</div>
+			<div>
+				<label for="txt">
+					Text:
+				</label>
+				<input type="text" id="txt" name="target" />
+				<label style="margin-left: 20px" for="pwd">
+					Password:
+				</label>
+				<input type="password" id="pwd" name="target2" />
+			</div>
+			<div>
+				<textarea rows="8" cols="60" autofocus="autofocus"></textarea>
+			</div>
+		</div>
+		<div style="position: absolute; width: 100%; top: 230px; bottom: 24px;">
+			<div id="keyboard">
+
+			<!-- </div> style="width: 715px; height: 240px; background: blue;"> -->
+			</div>
+		</div>
+	</div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+</body>
+
+</html>

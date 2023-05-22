@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>MindFusion VirtualKeyboard Sample - Hidden Keyboard</title>
+</head>
+
+<body>
+	<div id="header" style="height: 49px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="../keyboard_HiddenKeyboard.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton">
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+	<div id="info" style="top: 60px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample
+			</h1>
+			<p>
+				This sample shows how to show and hide the keyboard on demand, and load different custom layouts.
+			</p>
+		</div>
+	</div>
+	<div id="content" style="top: 60px; bottom: 24px; padding: 20px;">
+		<textarea id="text" rows="15" cols="55" placeholder="Your message here..."></textarea>
+		<select id="selectedLang" size="4">
+			<option value="Std">Standard</option>
+			<option value="Fr">French</option>
+			<option value="De">German</option>
+			<option value="Es">Spanish</option>
+		</select>
+		<br />
+		<div id="keyboard" style="width: 214px; height: 252px; display: none;">
+		</div>
+	</div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+</body>
+</html>

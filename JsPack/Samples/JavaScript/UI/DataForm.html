@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MindFusion JS UI Sample - Data Form</title>
+    <script type="text/javascript" src="common/samples.js"></script>
+    <link href="common/samples.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="themes/standard.css" />
+    <style type="text/css">
+        /* Form styling classes */
+        form, form label, form input, form select {
+            margin: 10px;
+            padding: 10px;
+        }
+
+            form input, form select {
+                display: block;
+                width: 200px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+        input[type=submit]:hover {
+            background-color: #b8babd;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" style="height: 59px;">
+        <div style="float: left; margin-left: 5px;">
+            <a href="../index.html" style="margin-left: 10px;">Index</a>
+        </div>
+        <div style="float: right; margin-right: 5px;">
+            <a href="DataForm.js" style="margin-right: 10px;">View source</a>
+          <button id="expandButton" onclick="onExpandCollapse()">
+                &rsaquo;
+            </button>
+        </div>
+    </div>
+    <div id="info" style="top: 70px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>
+                About this sample
+            </h1>
+            <p id="pinfo">
+                This sample shows how to use a standalone Window control as a data form. The HTML
+                of the data form is contained in "form.html" and this file will be used as a template
+                for the window content.
+            </p>
+        </div>
+    </div>
+    <div id="content" style="top: 70px; bottom: 24px;">
+        <input type="button" value="Show form" onclick="showForm()"/>
+    </div>
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+    <script src="../Scripts/drawing.js" type="text/javascript"></script>
+    <script src="../Scripts/controls.js" type="text/javascript"></script>
+    <script src="../Scripts/common.js" type="text/javascript"></script>
+    <script src="../Scripts/common-collections.js" type="text/javascript"></script>
+    <script src="../Scripts/common-ui.js" type="text/javascript"></script>
+    <script src="DataForm.js" type="text/javascript"></script>
+</body>
+
+</html>

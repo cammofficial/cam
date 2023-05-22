@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>MindFusion JsDiagram Sample - Database Design</title>
+</head>
+
+<body>
+    <div id="header" style="height: 49px;">
+        <div style="float: left; margin-left: 5px;">
+            <a href="../index.html" style="margin-left: 10px;">Index</a>
+        </div>
+        <div style="float: right; margin-right: 5px;">
+            <a href="../diagramming_DBDesign.js" style="margin-right: 10px;">View source</a>
+            <button id="expandButton" >
+                &rsaquo;
+            </button>
+        </div>
+    </div>
+    <div id="info" style="top: 60px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>
+                About this sample
+            </h1>
+            <p id="pinfo">
+                This sample shows a simple way to utilize the diagram library for creating any database schema.
+                Draw tables in the diagram
+                area to the left and add some fields to them. The event handlers generate SQL definition
+                clauses corresponding to the tables drawn.
+            </p>
+            <p>
+                Double-click on a table to add a row, double-click on a row to edit it, double-click
+                on a table's header to rename it, doble-click on a link to show info about it.
+                To delete a row from a table, click on it and use the button below the diagram.
+            </p>
+        </div>
+    </div>
+    <div id="content" style="top: 60px; bottom: 174px;">
+        <!-- The Diagram component is bound to the canvas element below -->
+        <div style="position: absolute; width: 100%; height: 100%; overflow: auto;">
+            <canvas id="diagram" width="2100" height="2100">
+                This page requires a browser that supports HTML 5 Canvas element.
+            </canvas>
+        </div>
+    </div>
+    <div id="controls" style="position: absolute; bottom: 24px; height: 150px; left: 0;
+		right: 401px;">
+        <input type="button" id="btnAddRow" value="Add row" style="margin-left: 5px; margin-bottom: 2px;" />
+        <input type="button" id="btnEditRow" value="Edit row" style="margin-left: 5px; margin-bottom: 2px;" />
+        <input type="button" id="btnDeleteRow" value="Delete row" style="margin-left: 5px;
+			margin-bottom: 2px;" />
+        <input type="button" id="btnInfo" value="Connection info" style="margin-left: 5px;" />
+        <input type="button" id="btnCreateTable" value="Create table" style="margin-left: 5px;
+			margin-bottom: 2px;" />
+        <input type="button" id="btnRenameTable" value="Rename table" style="margin-left: 5px;
+			margin-bottom: 2px;" />
+        <input type="button" id="btnDeleteTable" value="Delete table" style="margin-left: 5px;
+			margin-bottom: 2px;" />
+        <textarea id="generatedSql" style="height: 120px; width: 100%; bottom: 0px; left: 0px;
+			right: 0px; top: 30px;"></textarea>
+    </div>
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+    <div id="addRow-dialog" title="New Field" style="display:none;">
+        <form>
+            <fieldset>
+                <label for="addRow-fieldName">
+                    Field name
+                </label>
+                <input type="text" id="addRow-fieldName" data-prop="true" />
+                <label for="addRow-fieldType">
+                    Field type
+                </label>
+                <select id="addRow-fieldType" data-prop="true">
+                    <option>NUMBER</option>
+                    <option>CHAR(32)</option>
+                    <option>DATE</option>
+                    <option>VARCHAR</option>
+                    <option>BLOB</option>
+                </select>
+            </fieldset>
+        </form>
+    </div>
+    <div id="editRow-dialog" title="Edit Field" style="display:none;">
+        <form>
+            <fieldset>
+                <label for="editRow-fieldName">
+                    Field name
+                </label>
+                <input type="text" id="editRow-fieldName" data-prop="true" />
+                <label for="editRow-fieldType">
+                    Field type
+                </label>
+                <select id="editRow-fieldType" data-prop="true">
+                    <option>NUMBER</option>
+                    <option>CHAR(32)</option>
+                    <option>DATE</option>
+                    <option>VARCHAR</option>
+                    <option>BLOB</option>
+                </select>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.mfk-keyboard.light
+{
+    background-color: #fff;
+}
+.mfk-keyboard.light .mfk-key
+{
+    color: #747474;
+    background-color: #fff;
+    border: solid 1px #d4d4d4;
+}
+.mfk-keyboard.light .mfk-key:hover
+{
+    color: #747474;
+    background-color: #fff;
+    border: solid 1px #bdf07c;
+}
+.mfk-keyboard.light .mfk-key-down
+{
+    box-shadow: 0 1px 1px #747474;
+}

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>MindFusion Charting Sample - BubbleChart</title> 
+
+</head>
+<body>
+    <input type="hidden" id="collapsed" />
+	<div id="header" style="height: 49px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="../charting_BubbleChart.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton" >
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+    <div id="info" style="top: 60px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>About this sample
+            </h1>
+			<p id="pinfo">
+				This sample demonstrates various properties of the BubbleChart control.
+				Change property values in the panel to see their effect in the chart.
+			</p>
+        </div>
+    </div>
+    <div id="content" style="top: 60px; bottom: 24px; overflow-y: scroll;">
+        <div id="controls" style="height: 150px;">
+            <input type="checkbox" id="chbShowScatter" />
+            <label for="chbShowScatter">ShowScatter</label>
+            <input type="checkbox" id="chbShowDataLabels" checked="checked" />
+            <label for="chbShowDataLabels">ShowDataLabels</label>
+            <input type="checkbox" id="chbShowXTicks" checked="checked" />
+            <label for="chbShowXTicks">ShowXTicks</label>
+            <input type="checkbox" id="chbShowYTicks" checked="checked" />
+            <label for="chbShowYTicks">ShowYTicks</label>
+            <input type="checkbox" id="chbShowXCoords" checked="checked" />
+            <label for="chbShowXCoords">ShowXCoordinates</label>
+            <input type="checkbox" id="chbShowYCoords" checked="checked" />
+            <label for="chbShowYCoords">ShowYCoordinates</label>
+            <input type="checkbox" id="chbShowZoomWidgets" checked="checked" />
+            <label for="chbShowZoomWidgets">ShowZoomWidgets</label>
+            <input type="checkbox" id="chbPinGrid" />
+            <label for="chbPinGrid">PinGrid</label>
+            <input type="checkbox" id="chbAllowPan" checked="checked" />
+            <label for="chbAllowPan">AllowPan</label>
+            <input type="checkbox" id="chbShowLegend" checked="checked" />
+            <label for="chbShowLegend">ShowLegend</label>
+            <input type="checkbox" id="chbAllowMoveLegend" checked="checked" />
+            <label for="chbAllowMoveLegend">AllowMoveLegend</label>
+            <br />
+            <div style="display: inline-block">
+                <label for="cbGridType">Grid Type</label>
+                <select id="cbGridType">
+                    <option value="0">None</option>
+                    <option value="1">Horizontal</option>
+                    <option value="2" selected="selected">Vertical</option>
+                    <option value="3">Crossed</option>
+                </select>
+            </div>
+            <div style="display: inline-block">
+                <label for="cbLegendHorAlign">LegendHorizontalAlignment</label>
+                <select id="cbLegendHorAlign">
+                    <option value="0" selected="selected">Near</option>
+                    <option value="1">Center</option>
+                    <option value="2">Far</option>
+                    <option value="3">Stretch</option>
+                </select>
+            </div>
+            <div style="display: inline-block">
+                <label for="cbLegendVerAlign">LegendVerticalAlignment</label>
+                <select id="cbLegendVerAlign">
+                    <option value="0" selected="selected">Near</option>
+                    <option value="1">Center</option>
+                    <option value="2">Far</option>
+                    <option value="3">Stretch</option>
+                </select>
+            </div>
+            <br />
+            <label for="tbLegendMarginLeft">LegendMargin(Left)</label>
+            <input id="tbLegendMarginLeft" type="range" min="0" max="600" value="0" />
+            <label for="tbLegendMarginTop">LegendMargin(Top)</label>
+            <input id="tbLegendMarginTop" type="range" min="0" max="400" value="0" />
+
+        </div>
+
+        <div style="position: absolute; left: 0px; top: 150px; bottom: 0px; right: 0px">
+			<canvas id="chart" style="width: 100%; height: 100%; display: block;"></canvas>
+        </div>
+    </div>
+
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+</body>
+</html>

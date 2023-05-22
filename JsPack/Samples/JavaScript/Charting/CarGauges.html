@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>MindFusion Charting Sample - CarGauges</title>
+	<link href="common/samples.css" rel="stylesheet" />
+	<script type="text/javascript" src="common/samples.js"></script>
+	<style type="text/css">
+		td {
+			text-align: center;
+			vertical-align: middle;
+			font-family: Verdana;
+		}
+
+		tr:nth-child(even) {
+			background: #EEE;
+		}
+
+		tr:nth-child(odd) {
+			background: #CCC;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="hidden" id="collapsed" />
+	<div id="header" style="height: 49px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="CarGauges.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton" onclick="onExpandCollapse()">
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+	<div id="info" style="top: 60px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample
+			</h1>
+			<p id="pinfo">
+				This example shows different customizations and styling of the OvalGauge control
+				through the use of multiple scales, pointers and ranges.
+			</p>
+		</div>
+	</div>
+	<div id="content" style="top: 60px; bottom: 24px; overflow-y: scroll;">
+		<table cellpadding="5">
+			<tr>
+				<td>
+					Speedometer
+				</td>
+				<td>
+					Cyclometer
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<canvas id="speedometer" width="300" height="300">
+					</canvas>
+				</td>
+				<td>
+					<canvas id="cyclometer" width="300" height="300">
+					</canvas>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Speed
+					<input id="speed" style="width: 80px" />
+					Fuel
+					<input id="fuel" style="width: 80px" />
+				</td>
+				<td>
+					RPM
+					<input id="rpm" style="width: 80px" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Battery
+				</td>
+				<td>
+					Oil
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<canvas id="batteryMeter" width="260" height="140">
+					</canvas>
+				</td>
+				<td>
+					<canvas id="oilMeter" width="260" height="140">
+					</canvas>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Volt
+					<input id="volt" style="width: 80px" />
+				</td>
+				<td>
+					Oil
+					<input id="oil" style="width: 80px" />
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+
+	<script src="../Scripts/drawing.js" type="text/javascript"></script>
+	<script src="../Scripts/controls.js" type="text/javascript"></script>
+	<script src="../Scripts/gauges.js" type="text/javascript"></script>
+	<script type="text/javascript" src="CarGauges.js"></script>
+</body>
+
+</html>

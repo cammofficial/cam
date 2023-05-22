@@ -1,0 +1,92 @@
+.mfdv-grid.light
+{
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+    color:  #747474;
+}
+.mfdv-grid.light .mfdv-grid-header,
+.mfdv-grid.light .mfdv-grid-scroll-wrapper div
+{
+    color: #747474;
+    background-color: #fff;
+}
+.mfdv-grid.light .mfdv-grid-row-header,
+.mfdv-grid.light .mfdv-grid-table-corner
+{
+    background-color: #fff;
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+.mfdv-grid.light .mfdv-grid-header div[data-column]
+{
+    padding: 10px;
+    border-bottom: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+}
+.mfdv-grid.light .mfdv-grid-data-table > div:nth-child(even):not(.mfdv-grid-group-row)
+{
+    background-color: #fff7f8;
+}
+.mfdv-grid.light .mfdv-grid-group-row
+{
+    background-color: #d4d4d4;
+    padding: 4px;
+}
+.mfdv-grid.light .mfdv-grid-data-table .mfdv-grid-cell
+{
+    border-right: 1px solid #d4d4d4;
+    padding: 10px;
+}
+.mfdv-grid.light .mfdv-grid-row-header[data-selected],
+.mfdv-grid.light .mfdv-grid-cell[data-selected]
+{
+    background-color: #bdf07c; 
+}
+.mfdv-grid.light .mfdv-grid-context-menu
+{
+    border: 1px solid #d4d4d4;
+}.mfdv-propertygrid.light
+{
+    border: 1px solid #d4d4d4;
+}
+.mfdv-propertygrid.light .mfdv-grid,
+.mfdv-propertygrid.light.mfc-tabcontrol > ul
+{
+    border:0;
+}
+.mfdv-propertygrid.light .mfc-toolstrip
+{
+    border: none;
+}
+.mfdv-propertygrid.light .mfc-toolstrip.mfdv-propertygrid-footer
+{
+    border-top: 1px solid #d4d4d4;
+}
+.mfdv-propertygrid.light .mfc-toolstrip.mfdv-propertygrid-header
+{
+    border-bottom: 1px solid #d4d4d4;
+}
+.mfdv-propertygrid.light .mfc-toolstrip-item.mfc-selected
+{
+    background-color: #fff;
+}
+.mfdv-propertygrid.light .mfc-toolstrip-item.mfdv-sort-indicator-icon-asc
+{
+    background: url("icons/black/sort-az.png") no-repeat;
+}
+.mfdv-propertygrid.light .mfc-toolstrip-item.mfdv-sort-indicator-icon-desc
+{
+    background: url("icons/black/sort-za.png") no-repeat;
+}
+.mfdv-propertygrid.light .mfdv-grid-table-corner
+{
+    border:none;
+}
+.mfdv-propertygrid.light .mfdv-grid-data-table .mfdv-grid-cell
+{
+    padding: 4px;
+}
+.mfdv-propertygrid.light .mfdv-grid-data-table > div:nth-child(even):not(.mfdv-grid-group-row)
+{
+    background-color: #fff;
+}   

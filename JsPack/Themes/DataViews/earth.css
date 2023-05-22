@@ -1,0 +1,87 @@
+.mfdv-grid.earth
+{
+    color:  #46697d;
+    background-color:  #c5b28a;
+}
+.mfdv-grid.earth .mfdv-grid-header,
+.mfdv-grid.earth .mfdv-grid-scroll-wrapper div
+{
+    background-color: #46697d;
+    color:  #fff;
+}
+.mfdv-grid.earth .mfdv-grid-header div[data-column]
+{
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+.mfdv-grid.earth .mfdv-grid-data-table > div:nth-child(even):not(.mfdv-grid-group-row)
+{
+    background-color: #f2ebcf;
+}
+.mfdv-grid.earth .mfdv-grid-group-row
+{
+    background-color: #46697d;
+    color: #fff;
+    padding: 4px;
+    border-bottom: 1px solid #fff;
+}
+.mfdv-grid.earth .mfdv-grid-data-table .mfdv-grid-cell
+{
+    border-right: solid 1px #46697d;
+    border-bottom: 1px solid #f2ebcf;
+    padding: 10px;
+}
+.mfdv-grid.earth .mfdv-grid-row-header
+{
+    background-color: #c5b28a;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.mfdv-grid.earth .mfdv-grid-row-header[data-selected]
+{
+    background-color: #46697d;
+}
+.mfdv-grid.earth .mfdv-grid-cell[data-selected]
+{
+    background-color: #a3c686;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.mfdv-grid.earth .mfdv-grid-context-menu
+{
+    border: solid 1px #46697d;
+    background-color: #f2ebcf;
+}.mfdv-propertygrid.earth .mfdv-grid
+{
+    border:0;
+    background-color: #f2ebcf;
+}
+.mfdv-propertygrid.earth .mfc-toolstrip.earth
+{
+    background-color:#c5b28a;
+}
+.mfdv-propertygrid.earth .mfc-toolstrip.earth .mfc-toolstrip-item.mfc-active
+{
+    background-color:#c5b28a;
+    color:#46697d;
+}
+.mfdv-propertygrid.earth .mfc-toolstrip.earth .mfc-toolstrip-item.mfc-selected
+{
+    background-color:#a3c686;
+}
+.mfdv-propertygrid.earth .mfc-toolstrip-item.mfdv-sort-indicator-icon-asc
+{
+    background: url("icons/black/sort-az.png") no-repeat;
+}
+.mfdv-propertygrid.earth .mfc-toolstrip-item.mfdv-sort-indicator-icon-desc
+{
+    background: url("icons/black/sort-za.png") no-repeat;
+}
+.mfdv-propertygrid.earth .mfdv-grid-data-table .mfdv-grid-cell
+{
+    padding: 4px;
+}
+.mfdv-propertygrid.earth .mfdv-grid-data-table > div:nth-child(even):not(.mfdv-grid-group-row)
+{
+    background-color: #f2ebcf;
+}

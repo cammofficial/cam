@@ -1,0 +1,116 @@
+.mfm-map-view.standard .mfm-bubble{
+  color: #818284;
+  background-color: #fff;
+  border: solid 1px #818284;
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-map-view.standard .mfm-bubble::before {
+  border-color: #818284 transparent transparent transparent;
+}
+.mfm-map-view.standard .mfm-bubble::after {
+  border-color: #fff transparent transparent transparent;
+}
+.mfm-map-view.standard .mfm-bubble.mfm-hidden
+{
+  transition:visibility 0s linear 0.2s,opacity 0.2s linear;
+}
+.mfm-map-view.standard .mfm-bubble:not(.mfm-hidden)
+{
+  transition-delay:0s;
+  transition: opacity 0.2s linear;
+}.mfm-map-view .mfm-zoom-controller.standard
+{
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-zoom-controller.standard
+{
+  border:1px solid #fff;
+  border-radius: 3px;
+}
+.mfm-zoom-controller.standard a
+{
+  color: #fff;
+  background-color: #818284;
+}
+.mfm-zoom-controller.standard a:first-child
+{
+  border-bottom :1px solid #fff;
+}
+.mfm-zoom-controller.standard a:hover
+{
+  background-color: #c71c22;
+}
+.mfm-zoom-controller.standard a.mfm-disabled
+{
+  background-color: #efefef;
+  color: #aaa;
+}
+.mfm-map-view .mfm-layer-controller.standard
+{
+  color: #fff;
+  background-color: #818284;
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+.mfm-layer-controller.standard
+{
+  border:1px solid #fff;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.mfm-layer-controller.standard > div:not(:last-child)
+{
+  border-bottom :1px solid #fff;
+}
+.mfm-layer-controller.standard > div:hover
+{
+  background-color: #c71c22;
+}.mfm-map-view.standard .mfm-hint{
+  background-color: #818284;
+  color: #fff;
+}
+.mfm-map-view.standard .mfm-hint.mfm-hidden
+{
+  transform:scaleY(0);
+  transition: all 0.3s; 
+}
+.mfm-map-view.standard .mfm-hint:not(.mfm-hidden)
+{
+  transform:scaleY(1);
+  transition: all 0.3s; 
+}.mfm-map-view.standard 
+{
+  color: #818284;
+}
+.mfm-map-view.standard .mfm-attribution
+{
+  color: #fff;
+  background-color: rgba(129, 130, 132, 0.3);
+}
+.mfm-map-view.standard .mfm-attribution a
+{
+  color: #fff;
+}
+.mfm-map-view.standard .mfm-attribution a:hover
+{
+  color: #c71c22;
+}
+.mfm-map-view.standard .mfm-marker.mfm-css-marker
+{
+  height: 0;
+  width: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 20px solid #c71c22;
+}
+.mfm-map-view.standard .mfm-marker.mfm-css-marker::before
+{
+  position: absolute;
+  top: -30px;
+  left: -9px;
+  content: " ";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 6px solid #c71c22;
+  background-color: #fff;
+}

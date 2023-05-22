@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MindFusion JsPack Sample - World Population</title>
+    <style type="text/css">
+        .circle-image {
+            width: 20px;
+            height: 20px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" style="height: 59px;">
+        <div style="float: left; margin-left: 5px;">
+            <a href="../index.html" style="margin-left: 10px;">Index</a>
+        </div>
+        <div style="float: right; margin-right: 5px;">
+            <a href="../pack_WorldPopulation.js" style="margin-right: 10px;">View source</a>
+            <button id="expandButton" >
+                &rsaquo;
+            </button>
+        </div>
+    </div>
+    <div id="info" style="top: 70px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>
+                About this sample
+            </h1>
+            <p>
+                A Grid-based data-editing application. A Diagram control, arranged by the TreeMapLayout algorithm,
+                and a BarChart control provide visual representations of the data.
+                <br />
+                Click on a diagram node to locate the corresponding record in the grid.
+                Click on a chart bar to switch between continents and countries-by-continent views.
+            </p>
+        </div>
+    </div>
+    <div id="content" style="top: 70px; bottom: 24px;">
+        <div style="position: absolute; width: 100%; height: 100%;">
+            <div style="position: absolute; top: 20px; left: 45%;z-index:2;">
+                <canvas id="zoomer" width="50" height="300">
+                </canvas>
+            </div>
+            <div style="position:absolute; width:50%; height:50%;overflow:hidden;">
+                <canvas id="diagram"></canvas>
+            </div>
+            <div style="position:absolute; top:50%; width:50%; height:50%;">
+                <canvas id="barChart" style="width: 100%; height: 100%; display: block;">
+                </canvas>
+            </div>
+            <div id="grid" style="position:absolute;">
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+</body>
+</html>

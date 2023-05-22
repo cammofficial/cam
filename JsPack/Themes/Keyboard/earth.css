@@ -1,0 +1,20 @@
+.mfk-keyboard.earth
+{
+    color: #46697d;
+    background-color: #c5b28a;
+}
+.mfk-keyboard.earth .mfk-key
+{
+    color: #fff;
+    background-color: #c5b28a;
+    border: solid 1px #46697d; 
+    box-shadow: 2px 2px #666;
+}
+.mfk-keyboard.earth .mfk-key:hover
+{
+    background-color: #a3c686;
+}
+.mfk-keyboard.earth .mfk-key-down
+{
+    box-shadow: 2px 2px 2px #666;
+}

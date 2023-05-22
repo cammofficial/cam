@@ -1,0 +1,20 @@
+﻿.KeyboardKey
+{
+     border-radius: 6px;
+	 background: #38393d;
+	 color: #fbfbfb;
+	 border-color: #6B6B6B;
+	 border-width: 3px;
+}
+
+.KeyboardKeyDown
+{
+	 border-width: 4px;
+	 color: #fff;
+	 background: #2C2D30;
+}
+
+.Keyboard
+{
+     background: #000000;
+}

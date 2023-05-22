@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MindFusion JsDiagram Sample - Anchors</title>
+</head>
+<body>
+    <div id="header" style="height: 49px;">
+
+        <div style="float: left; margin-right: 5px;">
+            <a href="../index.html" style="margin-left: 10px;">Index</a>
+
+            <input id="rNode" type="radio" name="group1" value="Decision" checked="checked" />
+            Node
+
+            <input id="rDecision"  type="radio" name="group1" value="Butter" />
+            Decision
+        </div>
+        <div style="float: right; margin-right: 5px;">
+            <a href="../diagramming_Anchors.js" style="margin-right: 10px;">View source</a>
+            <button id="expandButton">
+                &rsaquo;
+            </button>
+        </div>
+    </div>
+    <div id="info" style="top: 60px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>
+                About this sample
+            </h1>
+            <p id="pinfo">
+                This sample shows how to define custom anchor-point patterns and assign them to
+                boxes. There are also several predefined anchor patterns to choose from. One of
+                them, DecisionBox, is used with the decision boxes in the sample diagram on the
+                left. Link several boxes with arrows to get an idea how anchor points work.
+            </p>
+        </div>
+    </div>
+    <div id="content" style="top: 60px; bottom: 24px;">
+        <!-- The DiagramView component is bound to the canvas element below -->
+        <div style="width: 100%; height: 100%; overflow: auto;">
+            <canvas id="diagram" width="2100" height="2100">
+                This page requires a browser that supports HTML 5 Canvas element.
+            </canvas>
+        </div>
+    </div>
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+
+</body>
+</html>

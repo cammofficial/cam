@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>MindFusion JsPack Sample - Simple Browser</title>
+	<script src="common/samples.js" type="text/javascript"></script>
+	<link href="common/samples.css" rel="stylesheet" />
+	<link href="UI/themes/standard.css" rel="stylesheet" />
+	<link href="UI/themes/peach.css" rel="stylesheet" />
+	<link href="UI/themes/business.css" rel="stylesheet" />
+	<link href="UI/themes/green.css" rel="stylesheet" />
+	<style type="text/css">
+		#toolstrip {
+			background-color: #333;
+		}
+
+		.mfc-tabcontrol .tab-back, .mfc-tabcontrol .tab-forward, .mfc-tabcontrol .add-tab {
+			border: none !important;
+			background-color: #fff !important;
+			color: #495f77 !important;
+		}
+
+			.mfc-tabcontrol .tab-back a, .mfc-tabcontrol .tab-forward a, .mfc-tabcontrol .add-tab a {
+				font-size: large;
+				font-weight: bold;
+			}
+
+		.mfc-tabcontrol .mfc-toolbutton-label img, .mfc-tooltip img {
+			width: 30px;
+			height: 30px;
+		}
+
+		.mfc-toolbutton-label img {
+			width: 25px;
+			height: 25px;
+			margin-right: 14px;
+		}
+
+		.toolbutton-2 {
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div id="header" style="height: 49px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="SimpleBrowser.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton" onclick="onExpandCollapse()">
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+	<div id="info" style="top: 60px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample
+			</h1>
+			<p>
+				A TabControl based web browser application, that shows how to create interactive
+				and non-interactive tabs and dynamically add new templated pages.
+			</p>
+		</div>
+	</div>
+	<div id="content" style="top: 60px; bottom: 24px;">
+		<div style="position: absolute; height: 100%; width: 150px;">
+			<div id="toolstrip">
+			</div>
+		</div>
+		<div style="position: absolute; height: 100%; left: 160px; right: 0;">
+			<div id="tabcontrol">
+			</div>
+		</div>
+	</div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+	<script src="Scripts/collections.js" type="text/javascript"></script>
+	<script src="Scripts/drawing.js" type="text/javascript"></script>
+	<script src="Scripts/controls.js" type="text/javascript"></script>
+	<script src="Scripts/common.js" type="text/javascript"></script>
+	<script src="Scripts/common-collections.js" type="text/javascript"></script>
+	<script src="Scripts/common-ui.js" type="text/javascript"></script>
+	<script src="SimpleBrowser.js" type="text/javascript"></script>
+</body>
+</html>

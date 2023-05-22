@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>MindFusion JsMapping Sample - Coordinates</title>
+    <script type="text/javascript" src="common/samples.js"></script>
+    <link href="common/samples.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="themes/light.css" />
+    <link rel="stylesheet" type="text/css" href="../UI/themes/light.css" />
+    <style type="text/css">
+        #data {
+            height: 100%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            padding: 6px;
+            overflow: auto;
+        }
+
+        #data label {
+            white-space: nowrap;
+            width: 150px;
+            margin: 10px 0;
+        }
+
+        #data input {
+            margin: 2px;
+            width: 70px;
+        }
+    </style>
+   
+    <style type="text/css">
+        .mfc-menu.context-menu {
+            position: absolute;
+            border-radius: 5px;
+        }
+
+        .mfc-menu.context-menu .mfc-menuitem-header {
+            user-select: text;
+            -moz-user-select: text;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header" style="height: 59px;">
+        <div style="float: left; margin-left: 5px;">
+            <a href="../index.html" style="margin-left: 10px;">Index</a>
+            &nbsp;
+            Map location&nbsp;<select id="center"></select>
+        </div>
+        <div style="float: right; margin-right: 5px;">
+            <a href="Coordinates.js" style="margin-right: 10px;">View source</a>
+            <button id="expandButton" onclick="onExpandCollapse()">
+                &rsaquo;
+            </button>
+        </div>
+    </div>
+    <div id="info" style="top: 70px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>
+                About this sample
+            </h1>
+            <p>
+                This sample shows how to get the map's geographical and client coordinates and
+                use the panTo and scrollTo methods of the mapView.
+                <br />
+                Choose a location from the list to pan the map to a new geographical center.
+                Click on the map surface to scroll the map so its center matches the mouse click position.
+            </p>
+        </div>
+    </div>
+    <div id="content" style="top: 70px; bottom: 24px;">
+        <div style="position: absolute; width: 100%; height: 100%; display: flex;">
+            <div id="mapView" style="height: 100%; width: 70%;">
+            </div>
+            <div id="data">
+                <label>
+                    Center Lat/Long
+                    <input type="text" id="centerLat" readonly=readonly /><input type="text" id="centerLong"
+                                                                                 readonly=readonly />
+                </label>
+                <label>
+                    Current Lat/Long
+                    <input type="text" id="currentLat" readonly=readonly /><input type="text" id="currentLong"
+                                                                                  readonly=readonly />
+                </label>
+                <label>
+                    Current ClientXY
+                    <input type="text" id="currentX" readonly=readonly /><input type="text" id="currentY"
+                                                                                readonly=readonly />
+                </label>
+                <label>
+                    ScrollXY
+                    <input type="text" id="scrollX" readonly=readonly /><input type="text" id="scrollY"
+                                                                               readonly=readonly />
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+    <script src="../Scripts/drawing.js" type="text/javascript"></script>
+    <script src="../Scripts/controls.js" type="text/javascript"></script>
+    <script src="../Scripts/common.js" type="text/javascript"></script>
+   <script src="../Scripts/common-collections.js" type="text/javascript"></script>
+    <script src="../Scripts/mapping.js" type="text/javascript"></script>
+    <script src="Coordinates.js" type="text/javascript"></script>
+</body>
+
+</html>

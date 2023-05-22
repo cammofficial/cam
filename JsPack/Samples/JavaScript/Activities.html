@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>MindFusion JavaScript Pack Sample - Activities</title>
+    <script type="text/javascript" src="common/samples.js"></script>
+    <link href="common/samples.css" rel="stylesheet" />
+    <link href="Scheduling/themes/business.css" rel="stylesheet" />
+    <link href="Keyboard/themes/business.css" rel="stylesheet" />
+    <style type="text/css">
+        .mfp-planner .itemClass0 .mfp-item .mfp-subject,
+        .mfp-planner .itemClass0 .mfp-item .mfp-details {
+            background-color: #8eb848;
+        }
+
+        .mfp-planner .itemClass1 .mfp-item .mfp-subject,
+        .mfp-planner .itemClass1 .mfp-item .mfp-details {
+            background-color: #193e4e;
+        }
+
+        .mfp-planner .itemClass2 .mfp-item .mfp-subject,
+        .mfp-planner .itemClass2 .mfp-item .mfp-details {
+            background-color: #ffcc33;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" style="height: 49px;">
+        <div style="float: left; margin-left: 5px;">
+            <a href="index.html" style="margin-left: 10px;">Index</a>
+        </div>
+        <div style="float: right; margin-right: 5px;">
+            <a href="Activities.js" style="margin-right: 10px;">View source</a>
+            <button id="expandButton" onclick="onExpandCollapse()">
+                &rsaquo;
+            </button>
+        </div>
+    </div>
+    <div id="info" style="top: 60px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>
+                About this sample
+            </h1>
+            <p>
+                This sample shows how to create an activity timetable. Choose an activity node from
+                list on the left, and drag and drop it to the timetable to create a corresponding
+                event. Double-click on an event to edit its subject with the help of the virtual
+                keyboard control.
+                <br />
+                The charts on the right present statistical information for the created data and
+                are refreshed automatically when an event is created or modified.
+            </p>
+        </div>
+    </div>
+    <div id="content" style="top: 60px; bottom: 24px;">
+        <div style="position: absolute; left: 0px; top: 0px; bottom: 0px; width: 200px; border-right: 1px solid #e2e4e7;
+			overflow: hidden; vertical-align: top;">
+            <div style="position: absolute; top: 0px; bottom: 200px; right: 0px; width: 180px;">
+                <canvas id="nodeList" width="200" height="300"></canvas>
+            </div>
+        </div>
+        <div style="position: absolute; left: 201px; top: 0px; right: 300px; bottom: 0px;">
+            <div id="calendar" style="height: 100%; width: 100%;">
+            </div>
+        </div>
+        <div style="position: absolute; top: 0px; right: 0px; bottom: 0px;">
+            <canvas id="pieChart" style="width: 300px; height: 350px; display: block;"></canvas>
+            <canvas id="lineChart" style="width: 300px; height: 350px;"></canvas>
+        </div>
+    </div>
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+    <script src="Scripts/collections.js" type="text/javascript"></script>
+    <script src="Scripts/drawing.js" type="text/javascript"></script>
+    <script src="Scripts/controls.js" type="text/javascript"></script>
+    <script src="Scripts/common.js" type="text/javascript"></script>
+    <script src="Scripts/common-collections.js" type="text/javascript"></script>
+    <script src="Scripts/common-ui.js" type="text/javascript"></script>
+    <script src="Scripts/animations.js" type="text/javascript"></script>
+    <script src="Scripts/graphs.js" type="text/javascript"></script>
+    <script src="Scripts/diagramming.js" type="text/javascript"></script>
+    <script src="Scripts/scheduling.js" type="text/javascript"></script>
+    <script src="Scripts/charting.js" type="text/javascript"></script>
+    <script src="Scripts/keyboard.js" type="text/javascript"></script>
+    <script src="CustomForm.js" type="text/javascript"></script>
+    <script src="Activities.js" type="text/javascript"></script>
+</body>
+</html>

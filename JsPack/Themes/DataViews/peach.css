@@ -1,0 +1,89 @@
+.mfdv-grid.peach
+{
+    border-color: #e2806c; 
+    background-color: #fff;
+}
+.mfdv-grid.peach .mfdv-grid-header,
+.mfdv-grid.peach .mfdv-grid-scroll-wrapper div
+{
+    background-color: #e2806c;
+    color: #fff;
+}
+.mfdv-grid.peach .mfdv-grid-header div[data-column]
+{
+    padding: 10px;
+    border-bottom: 1px solid #f6be84;
+}
+.mfdv-grid.peach .mfdv-grid-data-table > div:nth-child(even):not(.mfdv-grid-group-row)
+{
+    background-color: #f5d8bc;
+}
+.mfdv-grid.peach .mfdv-grid-group-row
+{
+    background-color: #e26b92;
+    color: #fff;
+    padding: 4px;
+    border-bottom: 1px solid #f6be84;
+}
+.mfdv-grid.peach .mfdv-grid-data-table .mfdv-grid-cell
+{
+    border-right: 1px solid #f6be84;
+    padding: 10px;
+}
+.mfdv-grid.peach .mfdv-grid-row-header
+{
+    background-color: #e2806c;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #f6be84;
+}
+.mfdv-grid.peach .mfdv-grid-row-header[data-selected],
+.mfdv-grid.peach .mfdv-grid-cell[data-selected]
+{
+    background-color:#e26b92;
+    color: #fff;
+}
+.mfdv-grid.peach .mfdv-grid-context-menu
+{
+    border: 1px solid #f6be84;
+    color:#e26b92;
+}
+.mfdv-grid.peach .mfdv-grid-context-menu > div:hover
+{
+    background-color:#e26b92;
+    color: #fff;  
+}.mfdv-propertygrid.peach
+{
+    border-color: #e2806c;  
+}
+.mfdv-propertygrid.peach .mfdv-grid
+{
+    border:0;
+}
+.mfdv-propertygrid.peach .mfc-toolstrip-item.mfdv-sort-indicator-icon-asc
+{
+    background: url("icons/white/sort-az.png") no-repeat;
+}
+.mfdv-propertygrid.peach .mfc-toolstrip-item.mfdv-sort-indicator-icon-desc
+{
+    background: url("icons/white/sort-za.png") no-repeat;
+}
+.mfdv-propertygrid.peach .mfc-toolstrip-item.mfdv-group-indicator-icon-off
+{
+    background: url("icons/white/group.png") no-repeat;
+}
+.mfdv-propertygrid.peach .mfc-toolstrip-item.mfdv-group-indicator-icon-on
+{
+    background: url("icons/white/ungroup.png") no-repeat;
+}
+.mfdv-propertygrid.peach.mfc-tabcontrol > ul
+{
+    border: none;
+}
+.mfdv-propertygrid.peach .mfdv-grid-data-table .mfdv-grid-cell
+{
+    padding: 4px;
+}
+.mfdv-propertygrid.peach .mfdv-grid-data-table > div:nth-child(even):not(.mfdv-grid-group-row)
+{
+    background-color: #fff;
+}

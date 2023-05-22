@@ -1,0 +1,27 @@
+.mfk-keyboard.pastel
+{
+    background-color: #fff;
+}
+.mfk-keyboard.pastel .mfk-key
+{
+    color: #444;
+    background-color: #f5ded0;  
+    border-top: solid 1px #f5ded0;
+    border-left: solid 1px #f5ded0;
+    border-bottom: solid 1px #ea684f;
+    border-right: solid 1px #ea684f;
+    border-radius: 3px;
+}
+.mfk-keyboard.pastel .mfk-key:hover
+{
+    color: #444;
+    background-color: #e9ca91;
+}
+.mfk-keyboard.pastel .mfk-key-down
+{
+    border-top: solid 1px #ea684f;
+    border-left: solid 1px #ea684f;
+    border-bottom: solid 1px #f5ded0;
+    border-right: solid 1px #f5ded0;
+
+}

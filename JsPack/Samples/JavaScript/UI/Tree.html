@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>MindFusion JS UI Sample - Tree</title>
+	<script type="text/javascript" src="common/samples.js"></script>
+	<link href="common/samples.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="themes/green.css" />
+	<link rel="stylesheet" type="text/css" href="themes/earth.css" />
+	<style type="text/css">
+		/* Hide the default treenode expanded/collapsed image */
+		.mfc-treenode-image {
+			visibility: hidden;
+			width: 40px !important;
+		}
+		/* Set a default opacity and scale for all tree node images */
+		.mfc-treenode > .mfc-treenode-header img {
+			opacity: 0.5;
+			transform: scale(0.7);
+		}
+		/* Set full opacity for expandable nodes */
+		.mfc-treenode > .mfc-treenode-header .mfc-treenode-image + img {
+			opacity: 1;
+		}
+		/* Set scale for expanded nodes */
+		.mfc-treenode-expanded > .mfc-treenode-header img {
+			transform: scale(1);
+		}
+		/* Override the default indent size */
+		.mfc-treeview .mfc-indent {
+			width: 40px !important;
+		}
+
+		.mfc-treeview > ul {
+			margin-left: -40px !important;
+		}
+		/* Classes for the tooltip template*/
+		.cardClass {
+			color: #fff;
+		}
+
+			.cardClass span {
+				display: block;
+				margin: 6px;
+			}
+
+			.cardClass #dest::before {
+				content: "Destinations Total:";
+			}
+
+			.cardClass #del::before {
+				content: "Deliveries Total:";
+			}
+		/* Override the position and size of the tooltip arrow */
+		.mfc-tooltip-right::before, .mfc-tooltip-right::after {
+			top: 5px !important;
+			border-width: 10px !important;
+		}
+	</style>
+</head>
+<body>
+	<div id="header" style="height: 59px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="Tree.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton" onclick="onExpandCollapse()">
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+	<div id="info" style="top: 70px; bottom: 24px;">
+		<div id="infoTab" style="padding: 10px;">
+			<h1>
+				About this sample
+			</h1>
+			<p id="pinfo">
+				This sample shows how to override the default appearance of nodes in a TreeView
+				control and how to load its data from a JSON object. Additionally, it shows how
+				to create a templated Tooltip control, show and hide it programmatically and use
+				it to display node-dependent data.
+			</p>
+		</div>
+	</div>
+	<div id="content" style="top: 70px; bottom: 24px;">
+	</div>
+	<div id="footer" style="height: 24px;">
+		<span id="copyright"></span>
+	</div>
+	<script src="../Scripts/drawing.js" type="text/javascript"></script>
+	<script src="../Scripts/controls.js" type="text/javascript"></script>
+	<script src="../Scripts/common.js" type="text/javascript"></script>
+	<script src="../Scripts/common-collections.js" type="text/javascript"></script>
+	<script src="../Scripts/common-ui.js" type="text/javascript"></script>
+	<script src="Tree.js" type="text/javascript"></script>
+</body>
+
+</html>

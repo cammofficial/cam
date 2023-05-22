@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>MindFusion Charting Sample - PieChart</title>
+
+</head>
+<body>
+    <input type="hidden" id="collapsed" />
+	<div id="header" style="height: 49px;">
+		<div style="float: left; margin-left: 5px;">
+			<a href="../index.html" style="margin-left: 10px;">Index</a>
+		</div>
+		<div style="float: right; margin-right: 5px;">
+			<a href="../charting_PieChart.js" style="margin-right: 10px;">View source</a>
+			<button id="expandButton" >
+				&rsaquo;
+			</button>
+		</div>
+	</div>
+    <div id="info" style="top: 60px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>About this sample
+            </h1>
+			<p id="pinfo">
+				This sample demonstrates various properties of the PieChart control.
+				Change property values in this panel to see their effect in chart to the left.
+			</p>
+        </div>
+    </div>
+    <div id="content" style="top: 60px; bottom: 24px; overflow-y: scroll;">
+
+        <div id="controls" style="height: 100px;">
+            <div style="display: inline-block">
+                Chart padding<input type="range" id="chartPadding" min="10" max="90" />
+            </div>
+            <div style="display: inline-block">
+                Detached slices
+                0<input type="checkbox" id="slice0" value="0">
+                1<input type="checkbox" id="slice1" value="1">
+                2<input type="checkbox" id="slice2" value="2">
+                3<input type="checkbox" id="slice3" value="3">
+             </div>
+                <div style="display: inline-block">
+                    Start angle<input type="range" id="startAngle" min="0" max="360" />
+                </div>
+                Doughnut<input type="checkbox" id="doughnut">
+                Allow rotate<input type="checkbox" id="allowRotate">
+                Show data labels<input type="checkbox" id="showDataLabels">
+            </div>
+
+        <div style="position: absolute; left: 0px; top: 100px; bottom: 0px; right: 0px">
+			<canvas id="pieChart" style="width: 90%; height: 90%; display: block;"></canvas>
+        </div>
+    </div>
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+
+<?php
+
+// Establecer la conexión con la base de datos
+$servername = "localhost";
+$username = "nfc";
+$password = "nfc";
+$dbname = "nfc";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Verificar si la conexión fue exitosa
+if (!$conn) {
+  die("Conexión fallida: " . mysqli_connect_error());
+}
+
+$sql = "INSERT INTO usuarios (id, contrasena, roles) VALUES (:id, :contrasena, :roles)";
+$stmt = $conn->prepare($sql);
+$stmt->bindParam(':id', $_POST['id']);
+$stmt->bindParam(':contrasena', $_POST['contrasena']);
+$stmt->bindParam(':roles', $_POST['roles']);
+$stmt->bindParam(':contrasena', $contrasena_hash);
+$stmt->execute();
+$contrasena_hash = password_hash($_POST['contrasena'], PASSWORD_DEFAULT);
+
+mysqli_close($conn);
+?>
+echo "¡Registro exitoso! Por favor, inicie sesión " <a href='Registrate.php'>aquí</a>.;
+
+$id = $_GET["id"];
+$contrasena = $_GET["contrasena"];
+$roles = $_GET["roles"];
+
+<input type="number" class="form-control" placeholder="1-Alumno 2-Professor"
+name="rol" required>
+
+
+
+
+
+
+
+
+
+
+// Establecer la conexión con la base de datos
+$servername = "localhost";
+$username = "nfc";
+$password = "nfc";
+$dbname = "nfc";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+
+
+
+// Verificar si la conexión fue exitosa
+if (!$conn) {
+  die("Conexión fallida: " . mysqli_connect_error());
+}
+
+ 
+$nombre = $_POST["nombre"];
+$password = $_POST["password"];
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+
+  // Verificar si el nombre de usuario y la contraseña son válidos
+  $sql = "SELECT * FROM usuarios WHERE nombre='$nombre' AND password='$hashed_password'";
+  $result = $conn->query($sql);
+  $query = "SELECT password FROM usuarios WHERE nombre = '$nombre'";
+ 
+  session_start();
+  if ($result->num_rows == TRUE) {
+    // Iniciar sesión y redirigir al usuario a la página de inicio
+    header("Location: Alumno.php");
+  } else {
+    // Mostrar un mensaje de error si el inicio de sesión no es válido
+    header("Location: Sesion.php");
+  }
+
+
+
+
+
+$conn->close();
+
+
+
+  printf("Password: %s\n", $hashed_password);
+  printf("hellloo!!!!!!\n");
+
+   printf("Select returned %d rows.\n", $result->num_rows);
+
+
+
+
+
+ if (mysqli_num_rows($result) > 0) {
+      while($row = mysqli_fetch_assoc($result)) {
+          $username = $row['nombre'];
+          $password = $row['password'];
+      }
+  } else {
+      throw new Exception("Error Processing Request", 1);
+  }
+  
+  
+  if  ( $_SESSION ['rol'] = 1 ) {
+    header ("Location: Alumno.php");
+  }
+ elseif ( $_SESSION ['rol'] = 2) {
+  header("Location: Inicio.php"); 
+}
+
+else {
+  header("Location: Sesion.php");
+
+}
+
+
+
+
+<?php
+// Iniciar sesión
+session_start();
+
+// Verificar si el usuario ha iniciado sesión y tiene un token válido
+if (!isset($_SESSION['usuario']) || !isset($_SESSION['token']) || $_SESSION['token'] !== $token) {
+    // Redirigir a la página de inicio de sesión
+    header("Location: login.php");
+    exit();
+}
+?>
+
+
+
+
+ <?php
+
+
+  $login = false;
+  $showError = false;
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include 'partials/_dbconnect.php';
+
+    $nombre = $_POST['nombre'];
+    $password = $_POST['password'];
+    $rol = 0;
+    
+    setcookie("nombre", $nombre); 
+   
+
+    // $pass1= password_hash($password, PASSWORD_DEFAULT);
+
+    $sql = "SELECT * FROM usuarios WHERE nombre = '$nombre' ";
+
+    $result = mysqli_query($conn, $sql);
+
+
+
+    if (mysqli_num_rows($result) > 0) {
+      while ($row = mysqli_fetch_assoc($result)) {
+        
+        $username = $row['nombre'];
+        $db_user_hashed_password = $row['password'];
+        $rol = $row['rol'];
+      }
+    } else  {
+      throw new Exception("Error Processing Request", 1);
+    }
+
+ 
+
+
+
+    if (password_verify($password, $db_user_hashed_password)) {
+      session_start();
+      $_SESSION['rol'] = $rol;
+      
+      if ($rol == 1) {
+
+        header("Location: Alumno.php");
+
+      } else if ($rol == 2) {
+        header("Location: profe.php");
+      }
+    }  
+      
+      
+    
+  }
+

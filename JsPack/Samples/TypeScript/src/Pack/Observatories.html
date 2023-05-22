@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MindFusion JavaScript Pack Sample - Observatories</title>
+    <style type="text/css">
+        #content {
+            font-family: Tahoma, Verdana, Segoe, sans-serif;
+            font-size: larger;
+        }
+        .mfp-planner {
+            border: none !important;
+        }
+        .mfp-planner .mfp-bg-cell-header {
+            line-height: 50px;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" style="height: 49px;">
+        <div style="float: left; margin-left: 5px;">
+            <a href="../index.html" style="margin-left: 10px;">Index</a>
+        </div>
+        <div style="float: right; margin-right: 5px;">
+            <a href="../pack_Observatories.js" style="margin-right: 10px;">View source</a>
+            <button id="expandButton" >
+                &rsaquo;
+            </button>
+        </div>
+    </div>
+    <div id="info" style="top: 60px; bottom: 24px;">
+        <div id="infoTab" style="padding: 10px;">
+            <h1>
+                About this sample
+            </h1>
+            <p>
+                Select a node from the tree view on the left to show the location of the corresponding
+                observatory in the map view. 
+                <br />
+                The chart on the right presents statistical information and is filtered by selecting a month 
+                from the list below.
+            </p>
+        </div>
+    </div>
+    <div id="content" style="top: 60px; bottom: 24px;">
+        <div style="position: absolute; left: 0px; top: 0px; bottom: 0px; width: 200px; border-right: 1px solid #e2e4e7;
+			overflow: hidden; vertical-align: top;">
+            <div id="treeView">
+            </div>
+        </div>
+        <div style="position: absolute; left: 201px; top: 0px; right: 400px; bottom: 0px;">
+            <div id="mapView">
+            </div>
+        </div>
+        <div style="position: absolute; top: 0px; right: 0px; bottom: 0px;">
+            <canvas id="barChart" style="width: 400px; height: 350px; display: block;"></canvas>
+            <div id="monthList" style="width: 400px; height: 200px;" />
+        </div>
+    </div>
+    <div id="footer" style="height: 24px;">
+        <span id="copyright"></span>
+    </div>
+</body>
+</html>

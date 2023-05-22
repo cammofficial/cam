@@ -1,0 +1,170 @@
+export const states = [{
+    "ID": 1,
+    "Name": "Alabama",
+    "Tag": 1
+}, {
+    "ID": 2,
+    "Name": "Alaska",
+    "Tag": "N/A"
+}, {
+    "ID": 3,
+    "Name": "Arizona",
+    "Tag": "2022-01-01"
+}, {
+    "ID": 4,
+    "Name": "Arkansas",
+    "Tag": true
+}, {
+    "ID": 5,
+    "Name": "California",
+    "Tag": "../assets/icon_fish.png"
+}, {
+    "ID": 6,
+    "Name": "Colorado",
+    "Tag": "One"
+}, {
+    "ID": 7,
+    "Name": "Connecticut",
+    "Tag": "N/A"
+}, {
+    "ID": 8,
+    "Name": "Delaware",
+    "Tag": "2022-02-01"
+}, {
+    "ID": 9,
+    "Name": "District of Columbia",
+    "Tag": false
+}, {
+    "ID": 10,
+    "Name": "Florida",
+    "Tag": 10
+}, {
+    "ID": 11,
+    "Name": "Georgia",
+    "Tag": "N/A"
+}, {
+    "ID": 12,
+    "Name": "Hawaii",
+    "Tag": false
+}, {
+    "ID": 13,
+    "Name": "Idaho",
+    "Tag": 10.02
+}, {
+    "ID": 14,
+    "Name": "Illinois",
+    "Tag": "2015-11-07T06:26:57"
+}, {
+    "ID": 15,
+    "Name": "Indiana",
+    "Tag": "Two"
+}, {
+    "ID": 16,
+    "Name": "Iowa"
+}, {
+    "ID": 17,
+    "Name": "Kansas"
+}, {
+    "ID": 18,
+    "Name": "Kentucky"
+}, {
+    "ID": 19,
+    "Name": "Louisiana"
+}, {
+    "ID": 20,
+    "Name": "Maine"
+}, {
+    "ID": 21,
+    "Name": "Maryland"
+}, {
+    "ID": 22,
+    "Name": "Massachusetts"
+}, {
+    "ID": 23,
+    "Name": "Michigan"
+}, {
+    "ID": 24,
+    "Name": "Minnesota"
+}, {
+    "ID": 25,
+    "Name": "Mississippi"
+}, {
+    "ID": 26,
+    "Name": "Missouri"
+}, {
+    "ID": 27,
+    "Name": "Montana"
+}, {
+    "ID": 28,
+    "Name": "Nebraska"
+}, {
+    "ID": 29,
+    "Name": "Nevada"
+}, {
+    "ID": 30,
+    "Name": "New Hampshire"
+}, {
+    "ID": 31,
+    "Name": "New Jersey"
+}, {
+    "ID": 32,
+    "Name": "New Mexico"
+}, {
+    "ID": 33,
+    "Name": "New York"
+}, {
+    "ID": 34,
+    "Name": "North Carolina"
+}, {
+    "ID": 35,
+    "Name": "Ohio"
+}, {
+    "ID": 36,
+    "Name": "Oklahoma"
+}, {
+    "ID": 37,
+    "Name": "Oregon"
+}, {
+    "ID": 38,
+    "Name": "Pennsylvania"
+}, {
+    "ID": 39,
+    "Name": "Rhode Island"
+}, {
+    "ID": 40,
+    "Name": "South Carolina"
+}, {
+    "ID": 41,
+    "Name": "South Dakota"
+}, {
+    "ID": 42,
+    "Name": "Tennessee"
+}, {
+    "ID": 43,
+    "Name": "Texas"
+}, {
+    "ID": 44,
+    "Name": "Utah"
+}, {
+    "ID": 45,
+    "Name": "Vermont"
+}, {
+    "ID": 46,
+    "Name": "Virginia"
+}, {
+    "ID": 47,
+    "Name": "Washington"
+}, {
+    "ID": 48,
+    "Name": "West Virginia"
+}, {
+    "ID": 49,
+    "Name": "Wisconsin"
+}, {
+    "ID": 50,
+    "Name": "Wyoming"
+}, {
+    "ID": 51,
+    "Name": "North Dakota"
+}];
+export default states
