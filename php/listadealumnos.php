@@ -42,7 +42,7 @@ echo '<tr>';
 echo '<th>Nombre</th>';
 echo '<th>Estado</th>';
 echo '<th>Hora Llegada</th>';
-echo '<th>Hora Limite</th>';
+echo '<th>Hora Limite</th>';  
 echo '<th>Fecha</th>';
 echo '</tr>';
 echo '</thead>';

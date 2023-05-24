@@ -92,11 +92,37 @@ include '../partials/_dbconnect.php';
 $id_usuario = $_POST["id"];
 $result = mysqli_query($conn, "SELECT * FROM registro WHERE id = $id_usuario");
 
+/*
+$dia_semana = date('N');
+$dias = ["lun", "mar", "mie", "jue", "vie"];
+
+$result_horario = mysqli_query($conn, "SELECT * FROM horarios");
+
+
+while ($row = $result_horario->fetch_assoc()) {
+
+    //$horario = $row[$dias[$dia_semana-1]];
+    $horario = $row["hora"];
+    $horario_inicio = strtotime(explode(" - ", $horario)[0]);
+    $hora_inicio = date("g:iA", $horario_inicio);
+    $hora_actual = date("H:i");
+
+    if (strtotime($hora_inicio) <= $hora_limite) {
+      // Acabar mañana
+    }
+
+    echo '<h1>' . $hora_limite . '</h1>';
+
+}
+*/
+
 // Si ya existe un registro de ese usuario en la BBDD, refresca el registro
 if ($result->num_rows > 0) {
 
     // $hora_llegada = date("H:i:s");
     $row = $result->fetch_assoc();
+    $hora_llegada1 = date("H:i:s");
+    $save1 = mysqli_query($conn, "UPDATE registro SET horallegada = '$hora_llegada1' WHERE id = $id_usuario ");
     $horallegada = $row['horallegada'];
 
     $hora_limite = strtotime("4:15PM");  // TODO: Cambiar a dinámico
@@ -109,7 +135,7 @@ if ($result->num_rows > 0) {
     } else {
         $estado = 'Falta';
     }
-    $save = mysqli_query($conn, "UPDATE registro SET horallegada = CURRENT_TIMESTAMP, horalimite = '$fecha_limite', estado = '$estado' WHERE id = $id_usuario");
+    $save = mysqli_query($conn, "UPDATE registro SET horalimite = '$fecha_limite', estado = '$estado' WHERE id = $id_usuario");
     
 
 }
@@ -121,6 +147,7 @@ else {
     // Si existe el usuario 
     if ($result1->num_rows > 0) {
         $row = $result->fetch_assoc();
+         
         $horallegada = $row['horallegada'];
         $hora_limite = strtotime("4:15PM"); // TODO: Cambiar a dinámico
         $fecha_limite = date("H:i:s", $hora_limite);
@@ -136,7 +163,7 @@ else {
         }
         
         // Insertas el registro de asistencia del usuario
-        $save1 = mysqli_query($conn, "INSERT INTO registro (id, horallegada, horalimite, estado) VALUES ($id_usuario, CURRENT_TIMESTAMP, '$fecha_limite', '$estado')");
+        $save1 = mysqli_query($conn, "INSERT INTO registro (id, horallegada, horalimite, estado) VALUES ($id_usuario, 'CURRENT_TIMESTAMP', '$fecha_limite', '$estado')");
 
     }
 }

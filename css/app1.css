@@ -135,7 +135,7 @@ font-family: Arial, Helvetica, sans-serif;
 #registro
 {
     position: relative;
-    left: 1080px;
+    left: 100px;
 
 
 }
@@ -361,20 +361,19 @@ td:active>span {
        
         
             position: relative;
-            left: -300px;
-         
-
-      
+            left: 46px;
         
     }
+
     #sesion
 {
     position: relative;
-    left: 110px;
+    left: px;
     
 
 }
   }
+  
 
   @media only screen and (max-width: 820px) {
     #registro {
