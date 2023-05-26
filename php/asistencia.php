@@ -90,7 +90,7 @@ include '../partials/_dbconnect.php';
 
 // Obtener la ID de usuario desde el formulario
 $id_usuario = $_POST["id"];
-$result = mysqli_query($conn, "SELECT * FROM registro WHERE id = $id_usuario");
+
 
 /*
 $dia_semana = date('N');
@@ -117,16 +117,20 @@ while ($row = $result_horario->fetch_assoc()) {
 */
 
 // Si ya existe un registro de ese usuario en la BBDD, refresca el registro
-if ($result->num_rows > 0) {
 
-    // $hora_llegada = date("H:i:s");
-    $row = $result->fetch_assoc();
-    $hora_llegada1 = date("H:i:s");
-    $save1 = mysqli_query($conn, "UPDATE registro SET horallegada = '$hora_llegada1' WHERE id = $id_usuario ");
-    $horallegada = $row['horallegada'];
+ include '../partials/_dbconnect.php';
+  
 
-    $hora_limite = strtotime("4:15PM");  // TODO: Cambiar a dinámico
-    $fecha_limite = date("H:i:s", $hora_limite);
+  // Obtener la ID de usuario desde el formulario
+  $id_usuario = $_POST["id"];
+  $result = mysqli_query($conn, "SELECT * FROM registro WHERE id = $id_usuario");
+
+ if ($result->num_rows > 0) {
+
+ // $hora_llegada = date("H:i:s"); 
+  $hora_limite = strtotime("4:10PM");
+  $fecha_limite = date("H:i:s", $hora_limite);
+
 
     if (strtotime($horallegada) <= $hora_limite) {
         $estado = 'Asistencia';
@@ -135,43 +139,37 @@ if ($result->num_rows > 0) {
     } else {
         $estado = 'Falta';
     }
-    $save = mysqli_query($conn, "UPDATE registro SET horalimite = '$fecha_limite', estado = '$estado' WHERE id = $id_usuario");
+   $save = mysqli_query($conn, "UPDATE registro SET horallegada = CURRENT_TIMESTAMP, horalimite = '$fecha_limite', estado = '$estado'  WHERE id = $id_usuario");
+  
+
     
-
-}
-// Si no existe un registro de ese usuario en la BBDD, verifica que existe el usuario e inserta el registro de asistencia
+} 
 else {
-    // Verificamos que exista el usuario
-    $result1 = mysqli_query($conn, "SELECT * FROM usuarios WHERE id = $id_usuario");
+   $result1 = mysqli_query($conn, "SELECT * FROM usuarios WHERE id = $id_usuario");
+   if ($result1->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $horallegada = $row['horallegada'];
+   $hora_limite = strtotime("4:10PM");
+   $fecha_limite = date("H:i:s", $hora_limite);
+  $save1 = mysqli_query($conn, "INSERT INTO registro (id, horallegada, horalimite, estado) VALUES ($id_usuario, CURRENT_TIMESTAMP, '$fecha_limite', '')");
+  
+   if ($save1) {
+     if (strtotime($horallegada) <= $hora_limite) {
+         $estado = 'Asistencia';
+     } else if (strtotime($horallegada) <= $hora_limite + 600) { // 600 segundos = 10 minutos
+         $estado = 'Retraso';
+     } else {
+         $estado = 'Falta';
+     }
 
-    // Si existe el usuario 
-    if ($result1->num_rows > 0) {
-        $row = $result->fetch_assoc();
-         
-        $horallegada = $row['horallegada'];
-        $hora_limite = strtotime("4:15PM"); // TODO: Cambiar a dinámico
-        $fecha_limite = date("H:i:s", $hora_limite);
-
-        // Compruebas el estado del registro de asistencia
-        if (strtotime($horallegada) <= $hora_limite) {
-          $estado = 'Asistencia';
-          
-        } else if (strtotime($horallegada) <= $hora_limite + 600) { // 600 segundos = 10 minutos
-          $estado = 'Retraso';
-        } else {
-          $estado = 'Falta';
-        }
-        
-        // Insertas el registro de asistencia del usuario
-        $save1 = mysqli_query($conn, "INSERT INTO registro (id, horallegada, horalimite, estado) VALUES ($id_usuario, 'CURRENT_TIMESTAMP', '$fecha_limite', '$estado')");
-
-    }
+     $save2 = mysqli_query($conn, "UPDATE registro SET estado = '$estado' WHERE id = $id_usuario");
+    } }
 }
 
 // Cerrar la conexión a la base de datos
 mysqli_close($conn);
-
-?>
+  
+  ?>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
